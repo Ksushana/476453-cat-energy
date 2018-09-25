@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ksenia Balashova](https://up.htmlacademy.ru/adaptive/15/user/476453).
-* Наставник: `Неизвестно`.
+* Наставник: `Сам себе наставник`.
 
 ---
 
