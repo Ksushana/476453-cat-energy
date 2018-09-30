@@ -28,3 +28,10 @@
 @mixin desktop {
   min-width: 1200px;
 }
+
+@mixin content-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  
+}
+

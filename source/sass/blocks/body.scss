@@ -1,0 +1,95 @@
+@import "../variables";
+@import "../mixins";
+
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url("../fonts/oswald-regular.woff") format("woff"), url("../fonts/oswald-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-grey;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-grey;
+  @include content-text;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .body {
+    @include tablet;
+  }
+
+  .container {
+    width: 768px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body {
+    @include desktop;
+  }
+
+  .container {
+    width: 1200px;
+    padding: 0;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  font-size: inherit;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
