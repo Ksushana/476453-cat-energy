@@ -1,0 +1,30 @@
+
+@mixin zero {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin tablet {
+  min-width: 768px;
+}
+
+@mixin desktop {
+  min-width: 1200px;
+}
