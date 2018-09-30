@@ -1,337 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HTML Academy: cat-energy</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="fonts/oswald.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldbold.woff2" as="font">
-  <script src="js/picturefill.min.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: cat-energy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/oswald.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldbold.woff2" as="font">
+    <script src="js/picturefill.min.js"></script>
+  </head>
 
-<body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" alt="логотип кота">
-    </a>
-    <p class="page-header__logo--text">
-      Cat energy
-    </p>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        Открыть меню
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--main main-nav__item--active">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--catalog">
-            <a class="main-nav__link" href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--form">
-            <a class="main-nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main class="catalog">
-    <h1 class="catalog__header">Каталог продукции</h1>
-    <article class="catalog__item catalog-item">
-      <picture class="catalog-item__image">
-        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-        <img class="photo__image photo__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-          alt="неродные просторы" width="280" height="280">
-      </picture>
-      <div class="catalog-item__info">
-        <h2 class="catalog-item__name">Cat Energy PRO 500 г</h2>
-        <table class="catalog-item__data">
-          <tr>
-            <td>Объем</td>
-            <td>500</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Курица</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>700 Р.</td>
-          </tr>
-        </table>
-        <button class="catalog-item__order">Заказать</button>
-      </div>
-    </article>
-    <article class="catalog-item catalog-item">
-      <picture class="catalog-item__image">
-        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-        <img class="photo__image photo__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-          alt="неродные просторы" width="280" height="280">
-      </picture>
-      <div class="catalog-item__info">
-        <h2 class="catalog-item__name">Cat Energy PRO 1000 г</h2>
-        <table class="catalog-item__data">
-          <tr>
-            <td>Объем</td>
-            <td>1000</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Курица</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>1000 Р.</td>
-          </tr>
-        </table>
-        <button class="catalog-item__order">Заказать</button>
-      </div>
-    </article>
-    <article class="catalog__item catalog-item">
-      <picture class="catalog-item__image">
-        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-        <img class="photo__image photo__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-          alt="неродные просторы" width="280" height="280">
-      </picture>
-      <div class="catalog-item__info">
-        <h2 class="catalog-item__name">Cat Energy PRO 500 г</h2>
-        <table class="catalog-item__data">
-          <tr>
-            <td>Объем</td>
-            <td>500</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Рыба</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>700 Р.</td>
-          </tr>
-        </table>
-        <button class="catalog-item__order">Заказать</button>
-      </div>
-    </article>
-    <article class="catalog__item catalog-item">
-      <picture class="catalog-item__image">
-        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-        <img class="photo__image photo__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-          alt="неродные просторы" width="280" height="280">
-      </picture>
-      <div class="catalog-item__info">
-        <h2 class="catalog-item__name">Cat Energy PRO 1000 г</h2>
-        <table class="catalog-item__data">
-          <tr>
-            <td>Объем</td>
-            <td>1000</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Рыба</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>1000 Р.</td>
-          </tr>
-        </table>
-        <button class="catalog-item__order">Заказать</button>
-      </div>
-    </article>
-    <article class="catalog__item catalog-item">
-      <picture class="catalog-item__image">
-        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-        <img class="photo__image photo__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-          alt="неродные просторы" width="280" height="280">
-      </picture>
-      <div class="catalog-item__info">
-        <h2 class="catalog-item__name">Cat Energy SLIM 500 г</h2>
-        <table class="catalog-item__data">
-          <tr>
-            <td>Объем</td>
-            <td>500</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Гречка</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>400 Р.</td>
-          </tr>
-        </table>
-        <button class="catalog-item__order">Заказать</button>
-      </div>
-    </article>
-    <article class="catalog__item catalog-item">
-      <picture class="catalog-item__image">
-        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-        <img class="photo__image photo__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-          alt="неродные просторы" width="280" height="280">
-      </picture>
-      <div class="catalog-item__info">
-        <h2 class="catalog-item__name">Cat Energy SLIM 1000 г</h2>
-        <table class="catalog-item__data">
-          <tr>
-            <td>Объем</td>
-            <td>1000</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Гречка</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>700 Р.</td>
-          </tr>
-        </table>
-        <button class="catalog-item__order">Заказать</button>
-      </div>
-    </article>
-    <article class="catalog__item catalog-item">
-      <picture class="catalog-item__image">
-        <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-        <img class="photo__image photo__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-          alt="неродные просторы" width="280" height="280">
-      </picture>
-      <div class="catalog-item__info">
-        <h2 class="catalog-item__name">Cat Energy SLIM 500 г</h2>
-        <table class="catalog-item__data">
-          <tr>
-            <td>Объем</td>
-            <td>500</td>
-          </tr>
-          <tr>
-            <td>Вкус</td>
-            <td>Рис</td>
-          </tr>
-          <tr>
-            <td>Цена</td>
-            <td>500 Р.</td>
-          </tr>
-        </table>
-        <button class="catalog-item__order">Заказать</button>
-      </div>
-    </article>
-    <div class="catalog__load load-more">
-      <p>Показать еще 100500 товаро</p>
-      <p>На самом деле вкусов гораздо больше!</p>
-      <button class="load-more__button">Показать все</button>
-    </div>
-
-    <section class="catalog__extra extra">
-      <h2 class="extra__header">Дополнительные това</h2>
-      <ul class="extra__list">
-        <li class="extra__item">
-          <h3 class="extra__name">Сахарозаменитель</h3>
-          <div class="extra__discription">
-            <span>1 упаковка (100 г)</span>
-            <span>100 Р.</span>
-            <button class="button extra__button">Заказать</button>
-          </div>
-        </li>
-        <li class="extra__item">
-          <h3 class="extra__name">Питьевая вод</h3>
-          <div class="extra__discription">
-            <span>5 литров</span>
-            <span>50 Р.</span>
-            <button class="button extra__button">Заказать</button>
-          </div>
-        </li>
-        <li class="extra__item">
-          <h3 class="extra__name">Молоко</h3>
-          <div class="extra__discription">
-            <span>1 литр</span>
-            <span>100 Р.</span>
-            <button class="button extra__button">Заказать</button>
-          </div>
-        </li>
-        <li class="extra__item">
-          <h3 class="extra__name">Витамины</h3>
-          <div class="extra__discription">
-            <span>1 упаковка (30 г)</span>
-            <span>300 Р.</span>
-            <button class="button extra__button">Заказать</button>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="catalog__gift">
-      <p>Закажите все и получите чехол для кота в подарок!</p>
-    </section>
-  </main>
-
-        <footer class="page-footer">
-          <img class="page-footer__logo" src="" alt="">
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">
-                  <svg class="social__icon social__icon--vkontakte" width="18" height="14">
-                    <use xlink:href="#icon-vkontakte"></use>
-                  </svg>
-                  Мы в ВКонтакте
-                </a>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="#" alt="логотип кота">
+        </a>
+        <p class="page-header__logo--text">
+          Cat energy
+        </p>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            Открыть меню
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--main main-nav__item--active">
+                <a class="main-nav__link">Главная</a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">
-                  <svg class="social__icon social__icon--instagram" width="20px" height="14px">
-                    <use xlink:href="#icon-instagram"></use>
-                  </svg>
-                  Мы в instagram
-                </a>
+              <li class="main-nav__item main-nav__item--catalog">
+                <a class="main-nav__link" href="#">Каталог продукции</a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">
-                  <svg class="social__icon social__icon--facebook" width="9px" height="19px">
-                    <use xlink:href="#icon-facebook"></use>
-                  </svg>
-                  Мы в Facebook
-                </a>
+              <li class="main-nav__item main-nav__item--form">
+                <a class="main-nav__link" href="#">Подбор программы</a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">HTML Academy</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__icon-academy" width="27px" height="34px">
-                <use xlink:href="#icon-htmlacademy"></use>
-              </svg>
-            </a>
-          </div>
-        </footer>
+        </nav>
+      </header>
+      
+      <main class="page-main form">
+        <h1 class="page-main__header">Подбор программы</h1>
+        <p class="form__intro">Заполните анкету и мы подберем программу питания для вашего кот</p>
+        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__fieldset form__fieldset--full-data full-data">
+            <label class="form__label full-data__label"> Имя:*
+              <input type="text" class=" form__input" required name="Имя" placeholder="Барсик">
+            </label>
+            <label class="form__label full-data__label"> Вес (кг):*
+              <input type="text" class=" form__input" required name="Вес" placeholder="7">
+            </label>
+            <label class="form__label full-data__label"> Возраст (лет):
+              <input type="text" class=" form__input" name="Возраст" placeholder="7">
+            </label>
+          </fieldset>
 
+          <fieldset class="form__fieldset form__fieldset--radio radio">
+            <div class="radio__inputs">
+              <p class="radio__item">
+                <input class="visually-hidden" type="radio" name="aim" value="Похудение" id="weight-decrease" checked>
+                <label for="weight-decrease">Похудение</label>
+              </p>
+              <p class="radio__item">
+                <input class="visually-hidden" type="radio" name="aim" value="Набор массы" id="weight-increase">
+                <label for="weight-increase">Набор массы</label>
+              </p>
+              <p class="radio__item">
+                <input class="visually-hidden" type="radio" name="aim" value="Не знаю (Нужен ваш совет)" id="neutral">
+                <label for="neutral">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--contacts contacts">
+            <legend class="form__legend form__legend--contacts contacts__legend">Контактные данные (владельца кот)</legend>
+            <div class="contacts__wrapper">
+              <div class="contacts__label-wrapper contacts__label-wrapper--email">
+                <label class="form__label contacts__label  contacts__label--email" for="email">E-mail:*</label>
+                <input class="form__email form__input contacts__input contacts__input--email" type="email" id="email" required name="Введите e-mail"
+                  placeholder="kuklachev@gmail.com">
+              </div>
+              <div class="contacts__label-wrapper contacts__label-wrapper--tel">
+                <label class="form__label contacts__label" for="telephone">
+                  <span class="contacts__short-label">Телефон:* </label>
+                <input type="tel" class="form__tel form__input contacts__input contacts__input--tel" id="telephone" required name="Введите телефон"
+                  placeholder="8 (960) 900-60-90">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--text">
+            <legend class="form__legend form__legend--text">Комментарий</legend>
+            <textarea class="form__textarea" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--checkbox checkbox">
+            <legend class="form__legend form__legend--checkbox checkbox__legend">Дополнительно</legend>
+            <div class="checkbox__inputs">
+              <p class="checkbox__item">
+                <input class="visually-hidden" type="checkbox" name="extra" id="sugar" value="Сахарозаменитель" checked>
+                <label for="sugar">Сахарозаменитель</label>
+              </p>
+              <p class="checkbox__item">
+                <input class="visually-hidden" type="checkbox" name="extra" id="water" value="Питьевая вода">
+                <label for="water">Питьевая вода</label>
+              </p>
+              <p class="checkbox__item">
+                <input class="visually-hidden" type="checkbox" name="extra" id="milk" value="Молоко">
+                <label for="milk">Молоко</label>
+              </p>
+              <p class="checkbox__item">
+                <input class="visually-hidden" type="checkbox" name="extra" id="vitamins" value="Витамины">
+                <label for="vitamins">Витамины</label>
+              </p>
+            </div>
+          </fieldset>
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <p class="form__note">* &ndash; обязательные поля</p>
+        </form>
+      </main>
+
+      <footer class="page-footer">
+        <img class="page-footer__logo" src="" alt="">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <svg class="social__icon social__icon--vkontakte" width="18" height="14">
+                  <use xlink:href="#icon-vkontakte"></use>
+                </svg>
+                Мы в ВКонтакте
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <svg class="social__icon social__icon--instagram" width="20px" height="14px">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+                Мы в instagram
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <svg class="social__icon social__icon--facebook" width="9px" height="19px">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+                Мы в Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__icon-academy" width="27px" height="34px">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
-  
-  </html>
+</html>
