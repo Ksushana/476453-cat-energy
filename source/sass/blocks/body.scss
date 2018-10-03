@@ -2,7 +2,7 @@
 @import "../mixins";
 
 @font-face {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   src: url("../fonts/oswald-regular.woff") format("woff"), url("../fonts/oswald-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -47,7 +47,7 @@ textarea[placeholder] {
   line-height: 18px;
   color: $text-grey;
 
-  @include content-text;
+  @include content-oswald;
 }
 
 .container {

@@ -9,15 +9,13 @@
 .services__weight-increase {
   background-color: $background-grey;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .services__header {
   @include content-oswald;
+  text-align: center;
 }
-
-// .services__info {
-
-// }
 
 .services__catalog {
   @include content-oswald;

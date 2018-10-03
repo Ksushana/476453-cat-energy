@@ -1,0 +1,17 @@
+@import "../variables";
+@import "../mixins";
+
+.product-description__header {
+  @include header;
+  text-align: left;
+  line-height: 60px;
+}
+
+.product-description__list {
+  @include list-reset;
+}
+
+.product-description__item {
+  padding-left: 80px;
+  margin: 20px 0;
+}

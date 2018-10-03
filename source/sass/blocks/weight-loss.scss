@@ -1,0 +1,28 @@
+@import "../variables";
+@import "../mixins";
+
+.weight-loss {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weight-loss__item {
+  @include flex-column;
+  width: 45%;
+}
+
+.weight-loss__data {
+  width: 100%;
+  border: 1px solid $border-grey;
+  border-radius: 3px;
+  text-align: center;
+  padding: 17px;
+}
+
+.weight-loss__text {
+  text-align: center;
+  background-color: $background-grey;
+  width: 87px;
+  margin: 0 auto;
+  transform: translateY(-10px);
+}

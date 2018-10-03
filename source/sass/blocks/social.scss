@@ -1,0 +1,7 @@
+@import "../variables";
+@import "../mixins";
+
+.social__list {
+  @include list-reset;
+  display: flex;
+}

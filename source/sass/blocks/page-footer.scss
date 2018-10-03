@@ -1,0 +1,10 @@
+@import "../variables";
+@import "../mixins";
+
+.page-footer {
+  @include flex-column;
+  padding-left: 6.3%;
+  padding-right: 6.3%;
+}
+
+

@@ -1,0 +1,22 @@
+@import "../variables";
+@import "../mixins";
+
+.contacts {
+  @include flex-column;
+}
+
+.contacts__wrapper {
+  display: flex;
+}
+
+.contacts__address {
+  line-height: 20px;
+  width: 150px;
+}
+
+.contacts__slogan {
+  @include content-oswald;
+  line-height: 20px;
+  width: 130px;
+  padding-right: 10%;
+}

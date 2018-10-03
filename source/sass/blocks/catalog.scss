@@ -1,0 +1,34 @@
+@import "../variables";
+@import "../mixins";
+
+.catalog {
+  @include flex-column;
+}
+
+.catalog__header {
+  @include header;
+  text-align: left;
+  margin: 22px 6.3%;
+}
+
+.catalog-item {
+  min-width: 280px;
+  max-width: 320px;
+  margin: 0 6.3%;
+   @include flex-column;
+}
+
+// .catalog-item__wrapper {
+//   display: flex;
+// }
+
+.catalog-item__info {
+  @include flex-column;
+}
+
+.catalog-item__name {
+  @include content-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  width: 90px;
+}
