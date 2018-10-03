@@ -97,6 +97,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   @include content-oswald;
+  border: none;
   text-align: center;
   font-size: 16px;
   line-height: 20px;

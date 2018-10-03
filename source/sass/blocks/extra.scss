@@ -1,0 +1,31 @@
+@import "../variables";
+@import "../mixins";
+
+.extra__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.extra__list {
+  @include list-reset;
+}
+
+.extra__item {
+  @include flex-column;
+}
+
+.extra__name {
+  @include content-oswald;
+}
+
+.extra__discription {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.extra__button {
+  width: 100%;
+}
