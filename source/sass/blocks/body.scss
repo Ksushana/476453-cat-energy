@@ -94,3 +94,14 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  @include content-oswald;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  height: 40px;
+  background-color: $green;
+  margin: 0 auto;
+}

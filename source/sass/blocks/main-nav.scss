@@ -2,8 +2,7 @@
 @import "../mixins";
 
 .main-nav {
-  font-family: "Oswald", "arial", sans-serif;
-  text-transform: uppercase;
+  @include content-oswald;
   position: relative;
   font-size: 20px;
   line-height: 20px;

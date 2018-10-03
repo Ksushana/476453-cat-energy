@@ -29,7 +29,16 @@
   min-width: 1200px;
 }
 
-@mixin content-text {
+@mixin content-oswald {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  color: black;
 }
+
+@mixin header {
+  font-size: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+}
+
+

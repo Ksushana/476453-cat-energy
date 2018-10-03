@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../mixins";
+
+.page-main__head {
+  @include flex_column;
+}
+
+.page-main__cat {
+  @include flex_column;
+  background-color: $green;
+  height: 305px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 28px;
+}
+
+.page-main__head-heading {
+  @include header;
+  line-height: 36px;
+  width: 300px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.page-main__head-moto {
+  @include content-oswald;
+  text-align: center;
+  color: #ffffff;
+}
+
+.page-main__head-image {
+  height: 160px;
+  text-align: center;
+}
+
+.page-main__head-image img {
+  transform: translateY(-138px);
+}
+
+.button--search {
+  width: 87.5%;
+  padding-top: 10px;
+}
+
+.page-main__services {
+  margin: 22px 6.3%;
+}
