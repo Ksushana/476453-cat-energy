@@ -3,20 +3,36 @@
 
 .contacts {
   @include flex-column;
+  // margin-right: 19px;
 }
 
 .contacts__wrapper {
   display: flex;
+  margin: 22px 6.3% 10px;
 }
 
 .contacts__address {
   line-height: 20px;
   width: 150px;
+  margin-top: 6px;
+  margin-left: auto;
 }
 
 .contacts__slogan {
   @include content-oswald;
+  font-size: 16px;
   line-height: 20px;
   width: 130px;
-  padding-right: 10%;
+  margin-right: 9%;
+  margin-top: 5px;
 }
+
+.contacts__map {
+  @include flex-column;
+}
+
+.contacts__map-background {
+  height: 365px;
+  margin: 0 auto;
+}
+
