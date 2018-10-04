@@ -8,7 +8,6 @@
     <link rel="preload" href="fonts/oswald.woff2" as="font">
     <link rel="preload" href="fonts/oswaldbold.woff2" as="font">
     <script src="js/picturefill.min.js"></script>
-    <script src="js/toggle.js"></script>
   </head>
 
   <body>
@@ -104,8 +103,8 @@
               <input class="visually-hidden visualisation-slider-1" type="radio" name="toggle-1" id="vs-btn-1" checked>
               <input class="visually-hidden visualisation-slider-2" type="radio" name="toggle-1" id="vs-btn-2">
 
-              <div class="small-slider-controls">
-                <label for="vs-btn-1" class="slider-control slider-control__active slider-control--fat">было</label>
+              <div class="slider-controls">
+                <label for="vs-btn-1" class="slider-control slider-control--fat">было</label>
                 <div class="slider-mark slider-mark--fat"></div>
                 <label for="vs-btn-2" class="slider-control slider-control--slim">стало</label>
               </div>
@@ -164,7 +163,7 @@
         </div>
       </footer>
     </div>
-    <script>
+    <!-- <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
 
@@ -180,6 +179,8 @@
         }
       });
 
-    </script>
+    </script> -->
+    <script src="js/toggle.js"></script>
+    <script src="js/slider-index.js"></script>
   </body>
 </html>

@@ -25,6 +25,29 @@
   border: 1px solid $border-grey;
   border-radius: 5px;
   background-color: #ffffff;
+  position: relative;
+}
+
+.slider-mark--fat::before {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  top: 3px;
+  left: 5px;
+}
+
+.slider-mark--slim::after {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  top: 3px;
+  right: 5px;
 }
 
 .slider-control {
@@ -39,9 +62,13 @@
   &--slim {
     margin-left: 19px;
   }
+
+  &__active {
+    display: block;
+  }
 }
 
-.small-slider-controls {
+.slider-controls {
   align-items: center;
   display: flex;
   margin: 0 auto;
