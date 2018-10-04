@@ -35,8 +35,8 @@
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 23px;
+  height: 23px;
   right: 0;
   top: 0;
   background-image: url("../img/icon-close.svg");
@@ -55,13 +55,17 @@
 
 .main-nav__link {
   @include flex-center;
-  height: 65px;
+  height: 60px;
   width: 100%;
   color: #000000;
   text-align: center;
   vertical-align: middle;
   border-bottom: 1px solid #e6e6e6;
   text-decoration: none;
+
+  &--main {
+    border-top: 1px solid #e6e6e6;
+  }
 
   &:hover {
     opacity: 0.6;
