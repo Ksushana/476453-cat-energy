@@ -1,0 +1,82 @@
+@import "../variables";
+@import "../mixins";
+
+.catalog {
+  @include flex-column;
+}
+
+.catalog__header {
+  @include header;
+  text-align: left;
+  margin: 22px 6.3%;
+}
+
+.catalog-item {
+  min-width: 280px;
+  margin: 0 6.3%;
+
+  @include flex-column;
+}
+
+.catalog-item__wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+
+.catalog-item__info {
+  @include flex-column;
+}
+
+.catalog-item__name {
+  @include content-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  width: 90px;
+}
+
+.catalog-item__order {
+  width: 100%;
+}
+
+.catalog__load {
+  margin: 22px 6.3%;
+  text-align: center;
+
+  &--100500 {
+    @include content-oswald;
+  }
+
+  &--more {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.catalog__button {
+  @include content-oswald;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  height: 40px;
+  background-color: $background-grey;
+  border: none;
+}
+
+.catalog__gift {
+  background-color: $green;
+  width: 280px;
+  height: 290px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  margin: 0 auto 20px;
+}
+
+.catalog__gift p {
+  width: 170px;
+  color: #ffffff;
+  text-align: center;
+  margin: 185px auto 0;
+}
+

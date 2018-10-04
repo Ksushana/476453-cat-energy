@@ -1,0 +1,39 @@
+@import "../variables";
+@import "../mixins";
+
+.weight-loss {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11px;
+}
+
+.weight-loss__item {
+  @include flex-column;
+  width: 44%;
+}
+
+.weight-loss__data {
+  @include content-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  width: 100%;
+  border: 1px solid $border-grey;
+  border-radius: 3px;
+  text-align: center;
+  padding: 14px 17px;
+}
+
+.weight-loss__text {
+  text-align: center;
+  background-color: $background-grey;
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 12px;
+  transform: translateY(-10px);
+}
+
+.result-example__conclusion {
+  margin-top: 10px;
+}
