@@ -21,6 +21,7 @@
   width: 300px;
   margin: 0 auto;
   color: #ffffff;
+  padding-bottom: 8px;
 }
 
 .page-main__head-moto {
@@ -30,7 +31,7 @@
 }
 
 .page-main__head-image {
-  height: 160px;
+  height: 135px;
   text-align: center;
 }
 
@@ -41,14 +42,22 @@
 .button--search {
   width: 87.5%;
   padding-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.page-main__services,
-.page-main__decription,
 .result-example__container,
 .contacts,
 .catalog__extra {
   margin: 22px 6.3%;
+}
+
+.page-main__services {
+  margin: 22px 6.3% 0;
+}
+
+.page-main__decription {
+  margin: 0 6.3%;
 }
 
 

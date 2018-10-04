@@ -5,6 +5,7 @@
   @include header;
   text-align: left;
   line-height: 60px;
+  margin-top: 15px;
 }
 
 .product-description__list {
@@ -13,5 +14,5 @@
 
 .product-description__item {
   padding-left: 80px;
-  margin: 20px 0;
+  margin: 20px 0 26px;
 }

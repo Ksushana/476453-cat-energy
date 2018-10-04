@@ -5,18 +5,41 @@
   @include flex-column;
 }
 
-.services__weight-decrease,
-.services__weight-increase {
+.services__weight-decrease {
   background-color: $background-grey;
   padding: 20px;
   margin-bottom: 20px;
 }
 
+.services__weight-increase {
+  background-color: $background-grey;
+  padding: 20px;
+}
+
 .services__header {
   @include content-oswald;
   text-align: center;
+  margin-top: 19px;
+  font-size: 24px;
+  margin-left: 15px;
+
+  &--increase {
+    margin-top: 18px;
+    margin-left: 37px;
+  }
+}
+
+.services__info {
+  padding-top: 18px;
+  padding-bottom: 30px;
+
+  &--increase {
+    margin-top: 19px;
+  }
 }
 
 .services__catalog {
   @include content-oswald;
+  font-size: 16px;
+  line-height: 16px;
 }

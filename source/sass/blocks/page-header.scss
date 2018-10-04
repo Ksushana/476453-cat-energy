@@ -3,6 +3,7 @@
 
 .page-header {
   @include flex_column;
+  margin-bottom: 10px;
 }
 
 .page-header__logo {

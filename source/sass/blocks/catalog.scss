@@ -13,13 +13,14 @@
 
 .catalog-item {
   min-width: 280px;
-  max-width: 320px;
   margin: 0 6.3%;
-   @include flex-column;
+
+  @include flex-column;
 }
 
 .catalog-item__wrapper {
   display: flex;
+  margin: 0 auto;
 }
 
 .catalog-item__info {
