@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../mixins";
+
+
+.result-example {
+  background-color: $background-grey;
+  padding-bottom: 35px;
+}
+
+.result-example__header {
+  @include header;
+  text-align: left;
+  line-height: 60px;
+  margin-top: 45px;
+  margin-bottom: 23px;
+  padding-top: 18px;
+}
+
+.result-example__conclusion {
+  @include content-oswald;
+  line-height: 20px;
+  text-align: center;
+}

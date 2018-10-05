@@ -1,0 +1,78 @@
+@import "../variables";
+@import "../mixins";
+
+.slider {
+  @include list-reset;
+  margin: 0 auto;
+}
+
+.visualisation-slider {
+  @include flex-column;
+}
+
+.lider-slide {
+  @include flex-column;
+}
+
+.slider-slide img {
+  margin-top: 13px;
+  margin-bottom: 28px;
+}
+
+.slider-mark {
+  width: 85px;
+  height: 14px;
+  border: 1px solid $border-grey;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.slider-mark--fat::before {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  top: 3px;
+  left: 5px;
+}
+
+.slider-mark--slim::after {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  top: 3px;
+  right: 5px;
+}
+
+.slider-control {
+  @include content-oswald;
+  font-size: 16px;
+  line-height: 20px;
+
+  &--fat {
+    margin-right: 19px;
+  }
+
+  &--slim {
+    margin-left: 19px;
+  }
+
+  &__active {
+    display: block;
+  }
+}
+
+.slider-controls {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  justify-content: space-between;
+}
+

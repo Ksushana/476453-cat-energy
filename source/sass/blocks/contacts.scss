@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../mixins";
+
+.contacts {
+  @include flex-column;
+
+  &--catalog {
+    background-color: $background-grey;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  margin: 22px 6.3% 10px;
+}
+
+.contacts__address {
+  line-height: 20px;
+  width: 150px;
+  margin-top: 6px;
+  margin-left: auto;
+}
+
+.contacts__slogan {
+  @include content-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  width: 130px;
+  margin-right: 9%;
+  margin-top: 5px;
+}
+
+.contacts__map {
+  @include flex-column;
+}
+
+.contacts__map-background {
+  height: 365px;
+  margin: 0 auto;
+}
+
