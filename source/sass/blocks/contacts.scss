@@ -3,7 +3,10 @@
 
 .contacts {
   @include flex-column;
-  // margin-right: 19px;
+
+  &--catalog {
+    background-color: $background-grey;
+  }
 }
 
 .contacts__wrapper {

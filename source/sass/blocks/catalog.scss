@@ -9,18 +9,30 @@
   @include header;
   text-align: left;
   margin: 22px 6.3%;
+  padding-top: 22px;
+  padding-bottom: 27px;
 }
 
 .catalog-item {
   min-width: 280px;
-  margin: 0 6.3%;
+  padding-bottom: 23px;
+  border-top: 1px solid $border-grey;
+  // min-height: 208px;
 
   @include flex-column;
+
+  &:last-child {
+    border-bottom: 1px solid $border-grey;
+  }
 }
 
 .catalog-item__wrapper {
   display: flex;
-  margin: 0 auto;
+  margin: 0 6.3%;
+}
+
+.catalog-item__image {
+  height: 145px;
 }
 
 .catalog-item__info {
@@ -32,23 +44,61 @@
   font-size: 16px;
   line-height: 20px;
   width: 90px;
+  padding-top: 8px;
+  margin-bottom: 10px;
+}
+
+.catalog-item__data {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.catalog-item__data tr {
+  display: flex;
+  justify-content: space-between;
+  min-width: 140px;
 }
 
 .catalog-item__order {
-  width: 100%;
+  width: 87%;
+  margin: 0 auto;
 }
 
 .catalog__load {
-  margin: 22px 6.3%;
+  // margin: 22px 6.3% 0;
   text-align: center;
+  padding-top: 42px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $border-grey;
+
 
   &--100500 {
     @include content-oswald;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
   }
 
   &--more {
+    margin-top: 8px;
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+.catalog__load-wrapper {
+  margin: 37px 6.3% 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -55px;
+    left: 45%;
+    background-image: url("../img/icon-plus.svg");
   }
 }
 
@@ -70,7 +120,7 @@
   height: 290px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin: 0 auto 20px;
+  margin: 17px auto 20px;
 }
 
 .catalog__gift p {
@@ -78,5 +128,18 @@
   color: #ffffff;
   text-align: center;
   margin: 185px auto 0;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    top: -120px;
+    left: 60px;
+  }
 }
 

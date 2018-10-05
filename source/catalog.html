@@ -40,6 +40,7 @@
 
     <main class="page-main catalog">
       <h1 class="page-main__header catalog__header">Каталог продукции</h1>
+      <div class="catalog__wrapper">
       <article class="catalog__item catalog-item">
         <div class="catalog-item__wrapper">
           <picture class="catalog-item__image">
@@ -55,7 +56,7 @@
             <table class="catalog-item__data">
               <tr>
                 <td>Объем</td>
-                <td>500</td>
+                <td>500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
@@ -85,7 +86,7 @@
             <table class="catalog-item__data">
               <tr>
                 <td>Объем</td>
-                <td>1000</td>
+                <td>1000 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
@@ -115,7 +116,7 @@
             <table class="catalog-item__data">
               <tr>
                 <td>Объем</td>
-                <td>500</td>
+                <td>500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
@@ -145,7 +146,7 @@
             <table class="catalog-item__data">
               <tr>
                 <td>Объем</td>
-                <td>1000</td>
+                <td>1000 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
@@ -175,7 +176,7 @@
             <table class="catalog-item__data">
               <tr>
                 <td>Объем</td>
-                <td>500</td>
+                <td>500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
@@ -205,7 +206,7 @@
             <table class="catalog-item__data">
               <tr>
                 <td>Объем</td>
-                <td>1000</td>
+                <td>1000 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
@@ -236,7 +237,7 @@
             <table class="catalog-item__data">
               <tr>
                 <td>Объем</td>
-                <td>500</td>
+                <td>500 г</td>
               </tr>
               <tr>
                 <td>Вкус</td>
@@ -251,10 +252,13 @@
         </div>
         <button class="button catalog-item__order">Заказать</button>
       </article>
+      </div>
       <div class="catalog__load">
+        <div class="catalog__load-wrapper">
         <p class="catalog__load--100500">Показать еще 100500 товаров</p>
         <p class="catalog__load--more">На самом деле вкусов гораздо больше!</p>
         <button class="catalog__button">Показать все</button>
+        </div>
       </div>
 
       <section class="catalog__extra extra">
@@ -269,7 +273,7 @@
             <button class="button extra__button">Заказать</button>
           </li>
           <li class="extra__item">
-            <h3 class="extra__name">Питьевая вод</h3>
+            <h3 class="extra__name">Питьевая вода</h3>
             <div class="extra__discription">
               <span>5 литров</span>
               <span>50 Р.</span>
@@ -297,7 +301,23 @@
       <section class="catalog__gift">
         <p>Закажите все <br> и получите чехол для кота в подарок!</p>
       </section>
+
+      <section class="page-main__contacts contacts contacts--catalog">
+        <div class="contacts__wrapper">
+          <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+
+        </div>
+        <div class="contacts__map">
+          <div class="contacts__map-background visually-hidden">
+            <img src="img/bg-map-mobile@1x.png" alt="как добраться до нас" width="320" height="365" class="map">
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.232191399579!2d30.323047398081453!3d59.93851225584751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Rusia%2C+191186!5e0!3m2!1ses!2ses!4v1538684299508"
+            height="365" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
     </main>
+
 
       <footer class="page-footer">
         <img class="page-footer__logo" src="img/logo-footer.svg" alt="логотип cat energy" width="127.8" height="23.4">
