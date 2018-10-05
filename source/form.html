@@ -39,18 +39,18 @@
       </header>
 
       <main class="page-main form-page">
-        <h1 class="page-main__header">Подбор программы</h1>
-        <p class="form-page__intro">Заполните анкету и мы подберем программу питания для вашего кот</p>
+        <h1 class="page-main__header form-page__header">Подбор программы</h1>
+        <p class="form-page__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset form__fieldset--full-data full-data">
             <label class="form__label full-data__label"> Имя:*
-              <input type="text" class=" form__input" required name="Имя" placeholder="Барсик">
+              <input type="text" class="form__input" required name="Имя" placeholder="Барсик">
             </label>
             <label class="form__label full-data__label"> Вес (кг):*
-              <input type="text" class=" form__input" required name="Вес" placeholder="7">
+              <input type="text" class="form__input" required name="Вес" placeholder="7">
             </label>
             <label class="form__label full-data__label"> Возраст (лет):
-              <input type="text" class=" form__input" name="Возраст" placeholder="7">
+              <input type="text" class="form__input" name="Возраст" placeholder="7">
             </label>
           </fieldset>
 
@@ -58,15 +58,15 @@
             <div class="radio__inputs">
               <p class="radio__item">
                 <input class="visually-hidden" type="radio" name="aim" value="Похудение" id="weight-decrease" checked>
-                <label for="weight-decrease">Похудение</label>
+                <label for="weight-decrease" class="form__label">Похудение</label>
               </p>
               <p class="radio__item">
                 <input class="visually-hidden" type="radio" name="aim" value="Набор массы" id="weight-increase">
-                <label for="weight-increase">Набор массы</label>
+                <label for="weight-increase" class="form__label">Набор массы</label>
               </p>
               <p class="radio__item">
                 <input class="visually-hidden" type="radio" name="aim" value="Не знаю (Нужен ваш совет)" id="neutral">
-                <label for="neutral">Не знаю (Нужен ваш совет)</label>
+                <label for="neutral" class="form__label">Не знаю (Нужен ваш совет)</label>
               </p>
             </div>
           </fieldset>
@@ -95,19 +95,19 @@
             <div class="checkbox__inputs">
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="sugar" value="Сахарозаменитель" checked>
-                <label for="sugar">Сахарозаменитель</label>
+                <label for="sugar" class="form__label">Сахарозаменитель</label>
               </p>
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="water" value="Питьевая вода">
-                <label for="water">Питьевая вода</label>
+                <label for="water" class="form__label">Питьевая вода</label>
               </p>
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="milk" value="Молоко">
-                <label for="milk">Молоко</label>
+                <label for="milk" class="form__label">Молоко</label>
               </p>
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="vitamins" value="Витамины">
-                <label for="vitamins">Витамины</label>
+                <label for="vitamins" class="form__label">Витамины</label>
               </p>
             </div>
           </fieldset>

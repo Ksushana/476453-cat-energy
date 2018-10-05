@@ -1,0 +1,22 @@
+@import "../variables";
+@import "../mixins";
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 13px;
+  align-items: center;
+  display: flex;
+}
+
+.form__fieldset {
+  @include zero;
+  @include flex-column;
+}
+
+.form__input {
+  height: 45px;
+  border: 1px solid $border-grey;
+  padding: 15px;
+  min-width: 50%;
+}
