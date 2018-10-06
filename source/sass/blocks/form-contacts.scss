@@ -1,0 +1,16 @@
+@import "../variables";
+@import "../mixins";
+
+.form-contacts__wrapper {
+  margin: 32px 6% 0;
+}
+
+.form-contacts__label-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form-contacts__input {
+  margin-left: 11px;
+  flex-grow: 1;
+}

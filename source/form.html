@@ -39,19 +39,23 @@
       </header>
 
       <main class="page-main form-page">
+        <div class="form-page__header-container">
         <h1 class="page-main__header form-page__header">Подбор программы</h1>
         <p class="form-page__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset form__fieldset--full-data full-data">
-            <label class="form__label full-data__label"> Имя:*
-              <input type="text" class="form__input" required name="Имя" placeholder="Барсик">
-            </label>
-            <label class="form__label full-data__label"> Вес (кг):*
-              <input type="text" class="form__input" required name="Вес" placeholder="7">
-            </label>
-            <label class="form__label full-data__label"> Возраст (лет):
-              <input type="text" class="form__input" name="Возраст" placeholder="7">
-            </label>
+            <div class="form__label-container">
+              <label class="form__label full-data__label"> Имя:*
+                <input type="text" class="form__input" required name="Имя" placeholder="Барсик">
+              </label>
+              <label class="form__label full-data__label"> Вес (кг):*
+                <input type="text" class="form__input" required name="Вес" placeholder="7">
+              </label>
+              <label class="form__label full-data__label"> Возраст (лет):
+                <input type="text" class="form__input" name="Возраст" placeholder="7">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--radio radio">
@@ -70,50 +74,66 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--contacts contacts">
-            <legend class="form__legend form__legend--contacts contacts__legend">Контактные данные (владельца кот)</legend>
-            <div class="contacts__wrapper">
-              <div class="contacts__label-wrapper contacts__label-wrapper--email">
-                <label class="form__label contacts__label  contacts__label--email" for="email">E-mail:*</label>
-                <input class="form__email form__input contacts__input contacts__input--email" type="email" id="email" required name="Введите e-mail"
+
+          <fieldset class="form__fieldset form__fieldset--contacts form-contacts">
+            <legend class="form__legend form__legend--contacts form-contacts__legend">Контактные данные (владельца кота)</legend>
+            <div class="form-contacts__wrapper">
+              <div class="form-contacts__label-wrapper form-contacts__label-wrapper--email">
+                <label class="form__label form-contacts__label  form-contacts__label--email" for="email">E-mail:*</label>
+                <input class="form__email form__input form-contacts__input form-contacts__input--email" type="email" id="email" required name="Введите e-mail"
                   placeholder="kuklachev@gmail.com">
               </div>
-              <div class="contacts__label-wrapper contacts__label-wrapper--tel">
-                <label class="form__label contacts__label" for="telephone">
-                  <span class="contacts__short-label">Телефон:* </label>
-                <input type="tel" class="form__tel form__input contacts__input contacts__input--tel" id="telephone" required name="Введите телефон"
+              <div class="form-contacts__label-wrapper form-contacts__label-wrapper--tel">
+                <label class="form__label form-contacts__label" for="telephone">
+                  <span class="form-contacts__short-label">Телефон:* </label>
+                <input type="tel" class="form__tel form__input form-contacts__input form-contacts__input--tel" id="telephone" required name="Введите телефон"
                   placeholder="8 (960) 900-60-90">
               </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--text">
             <legend class="form__legend form__legend--text">Комментарий</legend>
-            <textarea class="form__textarea" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__textarea form__input form__input--textarea" rows="9" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
+
           <fieldset class="form__fieldset form__fieldset--checkbox checkbox">
             <legend class="form__legend form__legend--checkbox checkbox__legend">Дополнительно</legend>
             <div class="checkbox__inputs">
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="sugar" value="Сахарозаменитель" checked>
-                <label for="sugar" class="form__label">Сахарозаменитель</label>
+                <label for="sugar" class="form__label form__label--checkbox">Сахарозаменитель</label>
               </p>
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="water" value="Питьевая вода">
-                <label for="water" class="form__label">Питьевая вода</label>
+                <label for="water" class="form__label form__label--checkbox">Питьевая вода</label>
               </p>
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="milk" value="Молоко">
-                <label for="milk" class="form__label">Молоко</label>
+                <label for="milk" class="form__label form__label--checkbox">Молоко</label>
               </p>
               <p class="checkbox__item">
                 <input class="visually-hidden" type="checkbox" name="extra" id="vitamins" value="Витамины">
-                <label for="vitamins" class="form__label">Витамины</label>
+                <label for="vitamins" class="form__label form__label--checkbox">Витамины</label>
               </p>
             </div>
           </fieldset>
           <button class="button form__button" type="submit">Отправить заявку</button>
-          <p class="form__note">* &ndash; обязательные поля</p>
+          <p class="form__note">* &ndash; Обязательные поля</p>
         </form>
+        <section class="page-main__contacts contacts contacts--catalog">
+          <div class="contacts__wrapper">
+            <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+
+          </div>
+          <div class="contacts__map">
+            <div class="contacts__map-background visually-hidden">
+              <img src="img/bg-map-mobile@1x.png" alt="как добраться до нас" width="320" height="365" class="map">
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.232191399579!2d30.323047398081453!3d59.93851225584751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Rusia%2C+191186!5e0!3m2!1ses!2ses!4v1538684299508"
+              height="365" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </section>
       </main>
 
       <footer class="page-footer">
