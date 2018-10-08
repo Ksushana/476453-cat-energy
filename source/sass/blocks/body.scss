@@ -103,7 +103,14 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   color: #ffffff;
   height: 40px;
-  background-color: $green;
+  background-color: $button-green;
   margin: 0 auto;
-  // max-width: 500px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

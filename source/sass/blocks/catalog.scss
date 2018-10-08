@@ -112,6 +112,14 @@
   height: 40px;
   background-color: $background-grey;
   border: none;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__gift {

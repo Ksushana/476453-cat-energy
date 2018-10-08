@@ -4,3 +4,33 @@
 .checkbox__inputs {
   margin: 22px 6%;
 }
+
+.checkbox__item label {
+  position: relative;
+}
+
+.checkbox__item label::before {
+  content: "";
+  position: absolute;
+  border: 1px solid $border-grey-light;
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  left: -1px;
+}
+
+.checkbox__item input:checked + label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 78%;
+}
+
+.checkbox__item:hover label::before {
+  border: 1px solid $border-grey-dark;
+}
+
+.checkbox__item:active label::before,
+.checkbox__item:active label::after {
+  opacity: 0.3;
+}

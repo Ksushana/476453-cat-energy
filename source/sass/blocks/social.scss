@@ -4,10 +4,37 @@
 .social__list {
   @include list-reset;
   display: flex;
+  padding-top: 7px;
+  padding-bottom: 15px;
+  justify-content: space-around;
+  margin-left: 55px;
+  margin-right: 65px;
 }
 
-.social__link {
+.social__item {
+  // margin: 0 auto;
   font-size: 0;
 }
 
+.social__link {
+  display: block;
 
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+    background-image: url("../img/icon-vk-mobile.svg");
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-insta-mobile.svg");
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+    background-image: url("../img/icon-fb-mobile.svg");
+    background-size: cover;
+  }
+}
