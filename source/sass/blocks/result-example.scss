@@ -69,3 +69,14 @@
     margin-top: 20px;
   }
 }
+
+@media (min-width: 1440px) {
+  .result-example {
+    border-top: none;
+    display: flex;
+  }
+
+  .result-example__container {
+    padding: 0 7.6%;
+  }
+}
