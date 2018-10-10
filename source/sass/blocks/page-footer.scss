@@ -56,3 +56,31 @@
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
 }
+
+@media (min-width: 768px) {
+  .page-footer__links {
+    flex-direction: row;
+    margin: 31px 3.5% 40px 4%;
+  }
+
+  .page-footer__logo-wrapper {
+    margin: 0 auto 0 0;
+    width: 127.8px;
+    height: 23.4px;
+    margin-top: 30px;
+  }
+
+  .page-footer__social {
+    border-top: none;
+    border-bottom: none;
+    margin: 0 auto;
+  }
+
+  .page-footer__copyright {
+    margin-left: auto;
+  }
+
+  .page-footer__copyright-text {
+    padding-right: 20px;
+  }
+}

@@ -101,13 +101,21 @@
             </div>
 
             </div>
-            <div class="result-example__visualisation visualisation-slider">
+            <div class="result-example__visualisation visualisation-slider visualisation-slider--fat">
               <ul class="slider">
                 <li class="slider-slide slider-slide--fat">
-                  <img src="img/before-mobile@1x.png" alt="Толстый Борис" width="320" height="240">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                    <img src="img/before-mobile@1x.png" alt="Толстый Борис" width="320" height="240">
+                  </picture>
                 </li>
                 <li class="slider-slide slider-slide--slim visually-hidden">
-                  <img src="img/after-mobile@1x.png" alt="Худой Борис" width="320" height="240">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                    <img src="img/after-mobile@1x.png" alt="Худой Борис" width="320" height="240">
+                  </picture>
                 </li>
               </ul>
               <input class="visually-hidden visualisation-slider-1" type="radio" name="toggle-1" id="vs-btn-1" checked>
@@ -115,7 +123,10 @@
 
               <div class="slider-controls">
                 <label for="vs-btn-1" class="slider-control slider-control--fat">было</label>
-                <div class="slider-mark slider-mark--fat"></div>
+                <div class="slider-range">
+                  <div class="slider-range-line slider-range-line--fat"></div>
+                  <div class="slider-range-value slider-range-value--fat"></div>
+                </div>
                 <label for="vs-btn-2" class="slider-control slider-control--slim">стало</label>
               </div>
           </div>
@@ -126,12 +137,19 @@
         <section class="page-footer__contacts contacts contacts--index">
           <div class="contacts__wrapper">
             <p class="contacts__slogan">приглашаем <br> к сотрудничеству дилеров!</p>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="contacts__address">
+              <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__city">Санкт-Петербург</p>
+            </div>
 
           </div>
           <div class="contacts__map">
             <div class="contacts__map-background visually-hidden">
-              <img src="img/bg-map-mobile@1x.png" alt="как добраться до нас" width="320" height="365" class="map">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+                <img src="img/bg-map-mobile@1x.png" alt="как добраться до нас" width="320" height="365" class="map">
+              </picture>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.232191399579!2d30.323047398081453!3d59.93851225584751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Rusia%2C+191186!5e0!3m2!1ses!2ses!4v1538684299508"
               height="365" frameborder="0" allowfullscreen></iframe>

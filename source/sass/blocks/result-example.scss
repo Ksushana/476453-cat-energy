@@ -29,13 +29,13 @@
 @media (min-width: 768px) {
   .result-example {
     margin-top: 35px;
-    padding: 0 4%;
+
     border-top: 1px solid $border-grey;
     background-color: #ffffff;
   }
 
   .result-example__container {
-    // display: flex;
+    padding: 0 4%;
     margin: 38px 0;
   }
 
