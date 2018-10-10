@@ -1,0 +1,19 @@
+@import "../variables";
+@import "../mixins";
+
+.full-data {
+  display: flex;
+  border-bottom: 1px solid $border-grey;
+}
+
+.full-data__label {
+  display: flex;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.full-data__label input {
+  display: block;
+  margin-left: 13px;
+  flex-grow: 1;
+}

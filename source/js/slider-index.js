@@ -27,6 +27,6 @@ var onSlimClick = function () {
   changeOnSlim();
 }
 
-console.log('sliderControlFat', document.querySelector(".slider-control--fat"));
+// console.log('sliderControlFat', document.querySelector(".slider-control--fat"));
 sliderControlFat.addEventListener("click", onFatClick);
 sliderControlSlim.addEventListener("click", onSlimClick);

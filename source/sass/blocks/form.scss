@@ -1,0 +1,127 @@
+@import "../variables";
+@import "../mixins";
+
+input[placeholder]:hover,
+textarea[placeholder]:hover {
+  border: 1px solid $border-grey-dark;
+}
+
+input[placeholder]:focus,
+textarea[placeholder]:focus {
+  border: 1px solid #000000;
+}
+
+input[type="radio"]:focus + label::before,
+input[type="checkbox"]:focus + label::before {
+  outline: 2px solid #5e9ed6;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  display: flex;
+
+  &--checkbox {
+    padding-left: 45px;
+    margin-bottom: 25px;
+  }
+}
+
+.form {
+  @include flex-column;
+  padding-bottom: 30px;
+}
+
+.form__fieldset {
+  @include zero;
+  @include flex-column;
+  position: relative;
+
+  &--contacts::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $green;
+    width: 90%;
+    left: 10%;
+    top: 45px;
+  }
+
+  &--text::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $green;
+    width: 90%;
+    left: 10%;
+    top: 25px;
+  }
+
+  &--checkbox::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $green;
+    width: 90%;
+    left: 10%;
+    top: 18px;
+  }
+}
+
+.form__input {
+  height: 45px;
+  border: 1px solid $border-grey-light;
+  padding: 13px;
+  min-width: 50%;
+
+  &--textarea {
+    height: 150px;
+  }
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 5%;
+  padding-top: 10px;
+  text-transform: none;
+  position: relative;
+  padding-right: 25px;
+  z-index: 2;
+  background-color: #ffffff;
+
+  &--text {
+    margin: 22px 5% 14px;
+    padding-top: 13px;
+  }
+
+  &--contacts {
+    padding-top: 30px;
+    width: 208px;
+  }
+
+  &--checkbox {
+    padding-top: 5px;
+    padding-bottom: 18px;
+  }
+}
+
+.form__textarea {
+  margin: 22px 6%;
+  width: 87%;
+}
+
+.form__button {
+  width: 87%;
+  margin: 15px auto;
+}
+
+.form__note {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: none;
+  margin-top: 5px;
+}

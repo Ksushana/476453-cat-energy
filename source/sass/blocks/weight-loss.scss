@@ -37,3 +37,18 @@
 .result-example__conclusion {
   margin-top: 10px;
 }
+
+@media (min-width: 768px) {
+  .weight-loss__data {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 17px 17px;
+  }
+
+  .weight-loss__text {
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+}

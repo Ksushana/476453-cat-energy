@@ -1,7 +1,48 @@
 @import "../variables";
 @import "../mixins";
 
+input[type="radio"]:focus + label::before,
+input[type="checkbox"]:focus + label::before {
+  outline: 2px solid #1e90ff;
+}
+
 .form-page {
   @include content-oswald;
-  margin: 22px 6.3%;
+}
+
+.form-page__header {
+  @include header;
+  font-weight: 400px;
+  line-height: 60px;
+  text-transform: none;
+  text-align: left;
+}
+
+.form__label-container {
+  padding-bottom: 11px;
+}
+
+.form-page__header-container,
+.form__label-container {
+  margin: 0 6.3%;
+}
+
+.form-page__intro {
+  margin-right: 10px;
+  padding-bottom: 26px;
+}
+
+.form input {
+  display: block;
+}
+
+.form__fieldset {
+  position: relative;
+  border: none;
+  margin: 0;
+  // padding: 20px;
+  // padding-bottom: 5px;
+  // margin-bottom: 15px;
+  width: 100%;
+  // border-bottom: 1px solid $grey-line;
 }

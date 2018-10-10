@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../mixins";
+
+.form-contacts__wrapper {
+  margin: 32px 6% 0;
+}
+
+.form-contacts__label-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--tel::after {
+    background-image: url("../img/icon-phone.svg");
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 15px;
+  }
+
+  &--email::after {
+    right: 18px;
+    top: 15px;
+    width: 17px;
+    height: 15px;
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.form-contacts__input {
+  margin-left: 11px;
+  flex-grow: 1;
+}
+
+// .form-contacts__input--email:active .form-contacts__label-wrapper--email::after {
+//   background-image: url("../img/icon-mail-green.svg");
+// }
+
+input[type="email"]:focus .form-contacts__label-wrapper--email::before {
+  background-image: url("../img/icon-mail-green.svg");
+}

@@ -1,0 +1,51 @@
+@import "../variables";
+@import "../mixins";
+
+.radio {
+  border-bottom: 1px solid $border-grey;
+  padding-bottom: 1px;
+}
+
+.radio__inputs {
+  margin: 25px 6.3%;
+}
+
+.radio__item {
+  margin-bottom: 25px;
+  padding-left: 46px;
+}
+
+.radio__label {
+  position: relative;
+}
+
+.radio__item input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $border-grey-light;
+  top: -6px;
+  left: -47px;
+}
+
+.radio__item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $green;
+  top: 3px;
+  left: -38px;
+}
+
+.radio__item:hover input[type="radio"] + label::before {
+  border: 1px solid $border-grey-dark;
+}
+
+.radio__item:active input[type="radio"] + label::before,
+.radio__item:active input[type="radio"] + label::after {
+  opacity: 0.3;
+}
