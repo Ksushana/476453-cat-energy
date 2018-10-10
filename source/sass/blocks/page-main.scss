@@ -111,3 +111,42 @@
     margin: 0 4%;
   }
 }
+
+@media (min-width: 1440px) {
+  .page-main__head {
+    flex-direction: row;
+  }
+
+  .page-main__head-image {
+    background-color: $green;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    width: 50%;
+    margin-top: -143px;
+    margin-left: auto;
+    min-height: 696px;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .page-main__head-heading,
+  .page-main__head-moto {
+    margin-left: 0;
+    padding-left: 18px;
+  }
+
+  .page-main__cat {
+    margin-left: 12%;
+    padding-top: 80px;
+  }
+
+  .button--search {
+    height: 52px;
+    top: 401px;
+    left: 13.2%;
+  }
+
+  .page-main__head-image img {
+    margin-left: -490px;
+    margin-top: 140px;
+  }
+}

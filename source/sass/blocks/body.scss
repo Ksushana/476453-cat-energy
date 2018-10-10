@@ -68,13 +68,13 @@ textarea[placeholder] {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .body {
     @include desktop;
   }
 
   .container {
-    width: 1200px;
+    min-width: 1440px;
     padding: 0;
   }
 }
