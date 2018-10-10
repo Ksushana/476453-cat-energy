@@ -16,11 +16,10 @@
 
 .extra__list {
   @include list-reset;
+
   &:last-child {
     border-bottom: 1px solid $border-grey;
   }
-
-  // margin: 0 6.3%;
 }
 
 .extra__item {
