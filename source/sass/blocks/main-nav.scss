@@ -13,7 +13,7 @@
   position: absolute;
   height: 25px;
   width: 25px;
-  top: -33px;
+  top: -43px;
   right: 20px;
   display: block;
   border: none;
@@ -92,5 +92,43 @@
 
   .main-nav--nojs .main-nav__item {
     display: block;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 24px;
+    justify-content: flex-end;
+  }
+
+  .main-nav {
+    margin-left: auto;
+  }
+
+  .main-nav__item {
+    margin-left: 37px;
+  }
+
+  .main-nav__link {
+    border-bottom: none;
+    height: 40px;
+    border-top: none;
+
+    &--active {
+      box-shadow: 0px 2px 0px 0px $button-green;
+    }
+  }
+
+  .main-nav__wrapper {
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 }

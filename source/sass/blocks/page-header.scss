@@ -5,11 +5,11 @@
   @include flex_column;
 }
 
-.page-header__logo {
-  text-align: center;
-  transform: translateX(-45px);
-  height: 55px;
-  padding-top: 10px;
+.page-header__logo img {
+  width: 190px;
+  height: 37.5px;
+  margin-left: 20px;
+  margin-bottom: 15px;
 
   &:hover {
     opacity: 0.8;
@@ -17,5 +17,20 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+    margin: 25px 4%;
+  }
+
+
+  .page-header__logo img {
+    width: 175px;
+    height: 58px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }

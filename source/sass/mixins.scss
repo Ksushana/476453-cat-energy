@@ -43,4 +43,12 @@
   font-weight: 400;
 }
 
+@mixin header-tablet {
+  font-size: 60px;
+  line-height: 60px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: left;
+  font-weight: 400;
+}
+
 

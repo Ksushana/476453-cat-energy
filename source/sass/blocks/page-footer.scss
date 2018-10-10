@@ -13,6 +13,19 @@
 }
 
 .page-footer__logo {
+    @include zero;
+
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__logo-wrapper {
   margin: 37px auto 30px;
   width: 127.8px;
   height: 23.4px;
