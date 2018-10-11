@@ -78,12 +78,53 @@
     padding-right: 11%;
     padding-top: 110px;
     margin: 70px 0 65px;
+    z-index: 2;
+    background-color: transparent;
 
     &::before {
       width: 80px;
       height: 80px;
       top: -2px;
       left: 0;
+    }
+
+    &::after {
+      font-family: "Oswald", "Arial", sans-serif;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 87px;
+      color: $background-grey;
+      font-size: 282px;
+      z-index: -1;
+    }
+
+    &--leaf {
+      &::after {
+        content: "1";
+        right: 96px;
+      }
+    }
+
+    &--powder {
+      &::after {
+        content: "2";
+        right: 80px;
+      }
+    }
+
+    &--fork {
+      &::after {
+        content: "3";
+        right: 80px;
+      }
+    }
+
+    &--clock {
+      &::after {
+        content: "4";
+        right: 75px;
+      }
     }
   }
 
