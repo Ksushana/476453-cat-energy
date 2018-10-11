@@ -133,3 +133,25 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .visualisation-slider {
+    margin-top: 196px;
+  }
+
+  .slider-slide img {
+    width: 690px;
+    height: 517px;
+    margin-bottom: 13px;
+  }
+
+  .slider {
+    margin-left: 47.2%;
+    margin-top: -222px;
+  }
+
+  .slider-controls {
+    margin-left: 52.8%;
+    margin-top: 22px;
+  }
+}

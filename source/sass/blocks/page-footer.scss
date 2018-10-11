@@ -55,6 +55,8 @@
 .page-footer__social {
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
+  padding-top: 0;
+  padding-bottom: 2px;
 }
 
 @media (min-width: 768px) {
@@ -82,5 +84,26 @@
 
   .page-footer__copyright-text {
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-footer__contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    width: 39.6%;
+    height: 201px;
+  }
+
+  .page-footer__links {
+    margin-left: 7.5%;
+    margin-right: 7.3%;
+  }
+
+  .page-footer__copyright {
+    padding-top: 20px;
   }
 }

@@ -73,10 +73,25 @@
 @media (min-width: 1440px) {
   .result-example {
     border-top: none;
-    display: flex;
+    position: relative;
+    padding-bottom: 0;
   }
 
   .result-example__container {
-    padding: 0 7.6%;
+    position: absolute;
+    padding: 0 61.8% 0 7.6%;
+    top: -218px;
+  }
+
+  .result-example__tablet-container {
+    flex-direction: column;
+  }
+
+  .result-example__text {
+    margin-top: 145px;
+  }
+
+  .result-example__data {
+    width: 83.5%;
   }
 }

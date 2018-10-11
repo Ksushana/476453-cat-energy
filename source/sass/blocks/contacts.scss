@@ -76,3 +76,22 @@
     height: 430px;
   }
 }
+
+@media (min-width: 1440px) {
+  .contacts__wrapper {
+    margin-left: 7.5%;
+    margin-top: 95px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding: 60px 77px 65px 77px;
+  }
+
+  .contacts__address {
+    @include zero;
+    text-align: left;
+  }
+
+  .contacts__map iframe {
+    height: 400px;
+  }
+}
