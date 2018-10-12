@@ -245,7 +245,7 @@
               <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">-->
-                <source media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
               <img class="catalog-item__image--small"src="img/rice-small-mobile@1x.jpg" alt="рис" width="140" height="144">
             </picture>
@@ -270,14 +270,16 @@
         </div>
         <button class="button catalog-item__order">Заказать</button>
       </article>
-      </div>
+
       <div class="catalog__load">
         <div class="catalog__load-wrapper">
-        <p class="catalog__load--100500">Показать еще 100500 товаров</p>
-        <p class="catalog__load--more">На самом деле вкусов гораздо больше!</p>
-        <button class="catalog__button">Показать все</button>
+          <p class="catalog__load--100500">Показать еще 100500 товаров</p>
+          <p class="catalog__load--more">На самом деле вкусов гораздо больше!</p>
+          <button class="catalog__button">Показать все</button>
         </div>
       </div>
+      </div>
+
 
       <section class="catalog__extra extra">
         <h2 class="extra__header">Дополнительные товары</h2>
@@ -326,7 +328,10 @@
         <section class="page-footer__contacts contacts contacts--catalog">
           <div class="contacts__wrapper">
             <p class="contacts__slogan">приглашаем <br> к сотрудничеству дилеров!</p>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="contacts__address">
+              <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__city">Санкт-Петербург</p>
+            </div>
 
           </div>
           <div class="contacts__map">

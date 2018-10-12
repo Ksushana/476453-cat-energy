@@ -75,6 +75,12 @@
   .contacts__map iframe {
     height: 430px;
   }
+
+  .contacts {
+    &--catalog {
+      margin-top: 35px;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
