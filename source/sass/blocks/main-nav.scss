@@ -132,3 +132,16 @@
     margin-bottom: 5px;
   }
 }
+
+@media (min-width: 1440px) {
+  .main-nav__link {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+
+  .main-nav__item:last-child {
+    margin-left: 50px;
+  }
+}

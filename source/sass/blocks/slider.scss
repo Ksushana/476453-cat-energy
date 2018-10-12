@@ -19,7 +19,7 @@
   margin-bottom: 28px;
 }
 
-.slider-mark {
+.slider-range-line {
   width: 85px;
   height: 14px;
   border: 1px solid $border-grey;
@@ -28,26 +28,21 @@
   position: relative;
 }
 
-.slider-mark--fat::before {
-  content: "";
+.slider-range-value {
   position: absolute;
   background-color: $green;
   width: 35px;
   height: 6px;
   border-radius: 5px;
-  top: 3px;
-  left: 5px;
-}
+  margin-top: -10px;
 
-.slider-mark--slim::after {
-  content: "";
-  position: absolute;
-  background-color: $green;
-  width: 35px;
-  height: 6px;
-  border-radius: 5px;
-  top: 3px;
-  right: 5px;
+  &--fat {
+    margin-left: 5px;
+  }
+
+  &--slim {
+    margin-left: 45px;
+  }
 }
 
 .slider-control {
@@ -74,4 +69,89 @@
   margin: 0 auto;
   width: 200px;
   justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .slider-slide {
+    margin-top: 20px;
+  }
+
+  .slider-slide img {
+    width: 665px;
+    height: 515px;
+    margin-bottom: 13px;
+  }
+
+  .slider-range-line {
+    width: 428px;
+    height: 6px;
+    background-color: $border-grey;
+  }
+
+  .slider-controls {
+    width: 570px;
+  }
+
+  .slider-control {
+    font-size: 20px;
+    border-bottom: 1px dotted $border-grey;
+    padding-bottom: 7px;
+    background-size: cover;
+  }
+
+  .visualisation-slider {
+    height: 463px;
+    margin-top: 240px;
+
+    &--fat {
+      background-color: $background-grey;
+    }
+
+    &--slim {
+      background-color: #eaeaea;
+    }
+  }
+
+  .slider {
+    margin-top: -200px;
+  }
+
+  .slider-range-value {
+    width: 32px;
+    height: 32px;
+    border: 12px solid #ffffff;
+    border-radius: 50%;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px 2px #cecece;
+
+    &--fat {
+      margin-left: 0;
+    }
+
+    &--slim {
+      margin-left: 400px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .visualisation-slider {
+    margin-top: 196px;
+  }
+
+  .slider-slide img {
+    width: 690px;
+    height: 517px;
+    margin-bottom: 13px;
+  }
+
+  .slider {
+    margin-left: 47.2%;
+    margin-top: -222px;
+  }
+
+  .slider-controls {
+    margin-left: 52.8%;
+    margin-top: 22px;
+  }
 }

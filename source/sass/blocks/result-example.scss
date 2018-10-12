@@ -29,13 +29,13 @@
 @media (min-width: 768px) {
   .result-example {
     margin-top: 35px;
-    padding: 0 4%;
+
     border-top: 1px solid $border-grey;
     background-color: #ffffff;
   }
 
   .result-example__container {
-    // display: flex;
+    padding: 0 4%;
     margin: 38px 0;
   }
 
@@ -67,5 +67,31 @@
     width: 180px;
     text-align: right;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .result-example {
+    border-top: none;
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .result-example__container {
+    position: absolute;
+    padding: 0 61.8% 0 7.6%;
+    top: -218px;
+  }
+
+  .result-example__tablet-container {
+    flex-direction: column;
+  }
+
+  .result-example__text {
+    margin-top: 145px;
+  }
+
+  .result-example__data {
+    width: 83.5%;
   }
 }

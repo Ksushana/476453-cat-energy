@@ -69,6 +69,7 @@
     @include header-tablet;
     color: #000000;
     width: 535px;
+    margin-left: 15%;
   }
 
   .page-main__head-moto {
@@ -79,6 +80,7 @@
     width: 535px;
     margin: 0 auto;
     padding-top: 34px;
+    margin-left: 15%;
   }
 
   .page-main__head-image {
@@ -98,7 +100,7 @@
     line-height: 20px;
     padding-top: 15px;
     top: 345px;
-    left: 120px;
+    left: 15.5%;
   }
 
   .page-main__services {
@@ -107,5 +109,52 @@
 
   .page-main__decription {
     margin: 0 4%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-main__head {
+    flex-direction: row;
+  }
+
+  .page-main__head-image {
+    background-color: $green;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    width: 50%;
+    margin-top: -143px;
+    margin-left: auto;
+    min-height: 696px;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .page-main__head-heading,
+  .page-main__head-moto {
+    margin-left: 0;
+    padding-left: 18px;
+  }
+
+  .page-main__cat {
+    margin-left: 12%;
+    padding-top: 80px;
+  }
+
+  .button--search {
+    height: 52px;
+    top: 401px;
+    left: 13.2%;
+  }
+
+  .page-main__head-image img {
+    margin-left: -490px;
+    margin-top: 140px;
+  }
+
+  .page-main__services {
+    margin: 22px 7.5% 0;
+  }
+
+  .page-main__decription {
+    margin: 70px 7.6% 0;
   }
 }
