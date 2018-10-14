@@ -49,3 +49,35 @@
 .radio__item:active input[type="radio"] + label::after {
   opacity: 0.3;
 }
+
+@media (min-width: 768px) {
+  .radio {
+    border-bottom: none;
+    width: 82%;
+    border: 1px solid $border-grey;
+    margin: 20px auto;
+  }
+
+  .radio__item input[type="radio"] + label::before {
+    width: 40px;
+    height: 40px;
+    top: -4px;
+    left: -57px;
+  }
+
+  .radio__item input[type="radio"]:checked + label::after {
+    width: 18px;
+    height: 18px;
+    top: 7px;
+    left: -46px;
+  }
+
+  .radio__inputs {
+    margin: 27px 6.3%;
+  }
+
+  .radio__item {
+    margin-bottom: 23px;
+    padding-left: 47px;
+  }
+}
