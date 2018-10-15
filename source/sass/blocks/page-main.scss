@@ -13,6 +13,11 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 28px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .page-main__head-heading {
@@ -126,6 +131,11 @@
     min-height: 696px;
     background-position: right;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 
   .page-main__head-heading,
