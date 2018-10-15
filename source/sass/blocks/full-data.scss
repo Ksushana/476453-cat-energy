@@ -17,3 +17,31 @@
   margin-left: 13px;
   flex-grow: 1;
 }
+
+@media (min-width: 768px) {
+  .full-data {
+    border-bottom: none;
+    width: 94%;
+  }
+
+  .full-data__label {
+    margin-bottom: 20px;
+  }
+
+  .full-data__label input {
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .full-data {
+    border-bottom: none;
+    width: 50%;
+  }
+
+  .full-data__label {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

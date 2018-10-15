@@ -13,6 +13,11 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 28px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .page-main__head-heading {
@@ -90,6 +95,8 @@
   .page-main__head-image img {
     transform: translateY(0);
     margin-top: 20px;
+    width: 709px;
+    height: 609px;
   }
 
   .button--search {
@@ -126,6 +133,11 @@
     min-height: 696px;
     background-position: right;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 
   .page-main__head-heading,
@@ -148,6 +160,8 @@
   .page-main__head-image img {
     margin-left: -490px;
     margin-top: 140px;
+    width: 552px;
+    height: 499px;
   }
 
   .page-main__services {

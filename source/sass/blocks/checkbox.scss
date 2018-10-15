@@ -34,3 +34,42 @@
 .checkbox__item:active label::after {
   opacity: 0.3;
 }
+
+@media (min-width: 768px) {
+  .checkbox__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5.4%;
+    margin-right: 5.2%;
+  }
+
+  .checkbox__item {
+    width: 38%;
+    margin: 20px 6%;
+  }
+
+  .checkbox__item label::before {
+    width: 40px;
+    height: 40px;
+    top: -3px;
+    left: -10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .checkbox__inputs {
+    justify-content: space-between;
+    margin-left: 6.3%;
+    margin-right: 3.5%;
+  }
+
+  .checkbox__item {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .checkbox__item label::before {
+    left: -13px;
+  }
+}
