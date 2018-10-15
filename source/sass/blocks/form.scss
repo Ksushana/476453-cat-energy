@@ -240,3 +240,85 @@ input[type="checkbox"]:focus + label::before {
     margin-left: 11%;
   }
 }
+
+@media (min-width: 1440px) {
+  .form {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 65px;
+  }
+
+  .form__fieldset {
+    &--full-data {
+      margin: 20px 0 23px 2.5%;
+    }
+
+    &--contacts::after {
+      top: 69px;
+    }
+
+    &--text {
+      margin-top: 38px;
+    }
+
+    &--text::after {
+      top: 33px;
+    }
+
+    &--checkbox {
+      margin-top: 37px;
+    }
+
+    &--checkbox::after {
+      top: 28px;
+    }
+  }
+
+  .form__legend {
+    &--contacts {
+      width: 593px;
+      padding-top: 46px;
+      margin: 0 5%;
+    }
+
+    &--text {
+      margin: 0 5%;
+      width: 258px;
+      padding-top: 10px;
+    }
+
+    &--checkbox {
+      margin: 0 5%;
+      width: 290px;
+      padding-top: 7px;
+    }
+  }
+
+  .form__textarea {
+    margin: 77px 7.7% 22px;
+    width: 84.6%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__input {
+    &--textarea {
+      padding-top: 8px;
+      padding-left: 18px;
+    }
+  }
+
+  .button__wrapper {
+    width: 100%;
+    margin: 9px 7.7% 0;
+    justify-content: left;
+  }
+
+  .form__button {
+    width: 46.7%;
+  }
+
+  .form__note {
+    margin-left: 6.7%;
+  }
+}

@@ -35,10 +35,6 @@
   opacity: 0.3;
 }
 
-.checkbox-button__wrapper {
-  margin: 0 6%;
-}
-
 @media (min-width: 768px) {
   .checkbox__inputs {
     display: flex;
@@ -60,3 +56,20 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .checkbox__inputs {
+    justify-content: space-between;
+    margin-left: 6.3%;
+    margin-right: 3.5%;
+  }
+
+  .checkbox__item {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .checkbox__item label::before {
+    left: -13px;
+  }
+}

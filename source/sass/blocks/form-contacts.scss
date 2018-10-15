@@ -78,3 +78,20 @@ input[type="email"]:focus .form-contacts__label-wrapper--email::before {
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .form-contacts__wrapper {
+    display: flex;
+    margin-left: 7.7%;
+    margin-right: 7.6%;
+    justify-content: space-between;
+  }
+
+  .form-contacts__label-wrapper {
+    width: 46.7%;
+  }
+
+  .form-contacts__short-label {
+    padding-bottom: 3px;
+  }
+}
