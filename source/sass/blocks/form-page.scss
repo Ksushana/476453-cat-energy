@@ -16,6 +16,7 @@ input[type="checkbox"]:focus + label::before {
   line-height: 60px;
   text-transform: none;
   text-align: left;
+  margin-top: 15px;
 }
 
 .form__label-container {

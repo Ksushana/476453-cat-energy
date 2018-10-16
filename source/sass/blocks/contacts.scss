@@ -61,6 +61,7 @@
 
   .contacts__wrapper {
     margin-left: 9%;
+    margin-bottom: 40px;
   }
 
   .contacts__address {
@@ -80,7 +81,7 @@
   }
 
   .contacts__map iframe {
-    height: 430px;
+    height: 396px;
   }
 
   .contacts {
@@ -91,7 +92,7 @@
 
   .contacts__map {
     background-image: url("../img/bg-map-tablet@1x.png");
-    height: 397px;
+    height: 396px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");

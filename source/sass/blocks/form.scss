@@ -30,7 +30,7 @@ input[type="checkbox"]:focus + label::before {
 
 .form {
   @include flex-column;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
 }
 
 .form__fieldset {
@@ -77,6 +77,10 @@ input[type="checkbox"]:focus + label::before {
 
   &--textarea {
     height: 150px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+    padding-right: 10px;
   }
 }
 
@@ -170,7 +174,7 @@ input[type="checkbox"]:focus + label::before {
 
   .form__fieldset {
     &--full-data {
-      margin: 19px 3% 23px;
+      margin: 21px 3.3% 21px;
     }
 
     &::after {
@@ -237,7 +241,7 @@ input[type="checkbox"]:focus + label::before {
     font-size: 16px;
     line-height: 16px;
     margin-top: 30px;
-    margin-left: 11%;
+    margin-left: 10%;
   }
 }
 

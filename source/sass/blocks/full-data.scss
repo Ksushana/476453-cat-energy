@@ -3,13 +3,17 @@
 
 .full-data {
   display: flex;
-  border-bottom: 1px solid $border-grey;
+  border-bottom: 1px solid #ededed;
 }
 
 .full-data__label {
   display: flex;
   text-align: left;
   margin-bottom: 13px;
+
+  &:first-child {
+    margin-bottom: 14px;
+  }
 }
 
 .full-data__label input {
@@ -26,6 +30,10 @@
 
   .full-data__label {
     margin-bottom: 20px;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
   }
 
   .full-data__label input {

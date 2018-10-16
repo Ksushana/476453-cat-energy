@@ -9,20 +9,20 @@
   @include header;
   text-align: left;
   margin: 22px 6.3%;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-bottom: 27px;
 }
 
 .catalog-item {
   min-width: 280px;
   padding-bottom: 20px;
-  border-top: 1px solid $border-grey;
+  border-top: 1px solid $border-grey-light;
   // min-height: 208px;
 
   @include flex-column;
 
   &:last-child {
-    border-bottom: 1px solid $border-grey;
+    border-bottom: 1px solid $border-grey-light;
   }
 }
 
@@ -66,11 +66,10 @@
 }
 
 .catalog__load {
-  // margin: 22px 6.3% 0;
   text-align: center;
   padding-top: 42px;
   padding-bottom: 25px;
-  border-bottom: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey-light;
 
 
   &--100500 {
@@ -82,7 +81,7 @@
 
   &--more {
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     font-size: 12px;
     line-height: 16px;
   }
@@ -130,14 +129,14 @@
   height: 290px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin: 17px auto 32px;
+  margin: 17px auto 33px;
 }
 
 .catalog__gift p {
   width: 170px;
   color: #ffffff;
   text-align: center;
-  margin: 185px auto 0;
+  margin: 187px auto 0;
   font-size: 16px;
   line-height: 20px;
   position: relative;
@@ -146,8 +145,10 @@
     content: "";
     position: absolute;
     width: 56px;
-    height: 60px;
+    height: 58px;
     background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     top: -120px;
     left: 60px;
   }
@@ -166,6 +167,10 @@
     z-index: -1;
     margin-left: 10%;
   }
+}
+
+.catalog__extra {
+  margin: 23px 6.3% 22px;
 }
 
 @media (min-width: 768px) {
@@ -247,7 +252,7 @@
   .catalog__load {
     width: 46%;
     border: 1px solid $border-grey;
-    // background-color: $background-grey;
+    padding-top: 43px;
     margin-bottom: 18px;
     margin-top: 119px;
     padding-bottom: 38px;
@@ -293,7 +298,7 @@
     width: auto;
     height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    margin: 25px 4% 77px;
+    margin: 24px 4% 77px;
     background-size: cover;
     background-position: center;
   }

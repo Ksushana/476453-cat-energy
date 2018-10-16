@@ -2,7 +2,12 @@
 @import "../mixins";
 
 .checkbox__inputs {
-  margin: 22px 6%;
+  margin: 21px 6.1% 22px;
+}
+
+.checkbox__item {
+  margin-top: 0;
+  margin-bottom: 13px;
 }
 
 .checkbox__item label {
@@ -41,6 +46,7 @@
     flex-wrap: wrap;
     margin-left: 5.4%;
     margin-right: 5.2%;
+    margin-top: 24px;
   }
 
   .checkbox__item {
