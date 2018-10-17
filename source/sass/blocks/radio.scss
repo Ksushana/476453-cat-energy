@@ -2,7 +2,7 @@
 @import "../mixins";
 
 .radio {
-  border-bottom: 1px solid $border-grey;
+  border-bottom: 1px solid #ededed;
   padding-bottom: 1px;
 }
 
@@ -54,7 +54,7 @@
   .radio {
     border-bottom: none;
     width: 82%;
-    border: 1px solid $border-grey;
+    border: 1px solid $border-grey-light;
     margin: 20px auto;
   }
 
@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .radio {
     width: 39.6%;
     margin: 20px auto 23px 3px;

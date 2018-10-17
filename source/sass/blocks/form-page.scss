@@ -16,6 +16,7 @@ input[type="checkbox"]:focus + label::before {
   line-height: 60px;
   text-transform: none;
   text-align: left;
+  margin-top: 15px;
 }
 
 .form__label-container {
@@ -63,7 +64,7 @@ input[type="checkbox"]:focus + label::before {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .form-page__header {
     margin-top: 70px;
     margin-bottom: 30px;

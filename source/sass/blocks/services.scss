@@ -209,10 +209,14 @@
       right: -47px;
       top: 9px;
     }
+
+    &:hover::before {
+      right: -58px;
+    }
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .services {
     flex-direction: row;
     justify-content: space-between;

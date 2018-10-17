@@ -29,7 +29,6 @@
 @media (min-width: 768px) {
   .result-example {
     margin-top: 35px;
-
     border-top: 1px solid $border-grey;
     background-color: #ffffff;
   }
@@ -47,7 +46,7 @@
   .result-example__text {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 63px;
+    margin-top: 64px;
     margin-right: 2%;
     margin-bottom: 42px;
   }
@@ -70,7 +69,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .result-example {
     border-top: none;
     position: relative;

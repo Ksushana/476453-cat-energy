@@ -97,6 +97,14 @@
     border-bottom: 1px dotted $border-grey;
     padding-bottom: 7px;
     background-size: cover;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   .visualisation-slider {
@@ -124,6 +132,14 @@
     margin-top: -20px;
     box-shadow: 1px 1px 10px 2px #cecece;
 
+    &:hover {
+      box-shadow: 1px 3px 10px 5px #cecece;
+    }
+
+    &:active {
+      box-shadow: 0 0 1px 1px $green;
+    }
+
     &--fat {
       margin-left: 0;
     }
@@ -134,7 +150,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .visualisation-slider {
     margin-top: 196px;
   }

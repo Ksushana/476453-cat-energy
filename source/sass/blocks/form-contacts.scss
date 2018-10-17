@@ -50,7 +50,7 @@ input[type="email"]:focus .form-contacts__label-wrapper--email::before {
 @media (min-width: 768px) {
   .form-contacts__wrapper {
     margin-top: 75px;
-    margin-left: 9%;
+    margin-left: 9.1%;
     margin-right: 8.5%;
   }
 
@@ -79,7 +79,7 @@ input[type="email"]:focus .form-contacts__label-wrapper--email::before {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .form-contacts__wrapper {
     display: flex;
     margin-left: 7.7%;

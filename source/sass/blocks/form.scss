@@ -16,6 +16,10 @@ input[type="checkbox"]:focus + label::before {
   outline: 2px solid #5e9ed6;
 }
 
+.input-error {
+  border: 1px solid #ff8282;
+}
+
 .form__label {
   font-size: 16px;
   line-height: 18px;
@@ -30,7 +34,7 @@ input[type="checkbox"]:focus + label::before {
 
 .form {
   @include flex-column;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
 }
 
 .form__fieldset {
@@ -77,6 +81,10 @@ input[type="checkbox"]:focus + label::before {
 
   &--textarea {
     height: 150px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+    padding-right: 10px;
   }
 }
 
@@ -170,7 +178,7 @@ input[type="checkbox"]:focus + label::before {
 
   .form__fieldset {
     &--full-data {
-      margin: 19px 3% 23px;
+      margin: 21px 3.3% 21px;
     }
 
     &::after {
@@ -237,11 +245,11 @@ input[type="checkbox"]:focus + label::before {
     font-size: 16px;
     line-height: 16px;
     margin-top: 30px;
-    margin-left: 11%;
+    margin-left: 10%;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .form {
     flex-wrap: wrap;
     flex-direction: row;

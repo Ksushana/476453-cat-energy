@@ -128,12 +128,12 @@
   }
 
   .main-nav__wrapper {
-    margin-top: 10px;
+    margin-top: 13px;
     margin-bottom: 5px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .main-nav__link {
     color: #000000;
     font-size: 20px;
@@ -143,6 +143,10 @@
     &--index {
       color: #ffffff;
     }
+  }
+
+  .main-nav__item--main .main-nav__link--active {
+    box-shadow: 0 2px 0 0 #ffffff;
   }
 
   .main-nav__item:last-child {
