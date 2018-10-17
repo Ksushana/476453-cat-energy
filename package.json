@@ -21,7 +21,9 @@
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "8.4.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-uglify": "^3.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
