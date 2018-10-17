@@ -16,6 +16,10 @@ input[type="checkbox"]:focus + label::before {
   outline: 2px solid #5e9ed6;
 }
 
+.input-error {
+  border: 1px solid #ff8282;
+}
+
 .form__label {
   font-size: 16px;
   line-height: 18px;
@@ -245,7 +249,7 @@ input[type="checkbox"]:focus + label::before {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .form {
     flex-wrap: wrap;
     flex-direction: row;
