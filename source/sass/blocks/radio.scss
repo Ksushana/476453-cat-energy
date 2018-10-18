@@ -11,8 +11,14 @@
 }
 
 .radio__item {
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
   padding-left: 46px;
+  margin-bottom: 25px;
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .radio__label {

@@ -8,6 +8,10 @@
 .checkbox__item {
   margin-top: 0;
   margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .checkbox__item label {
@@ -22,6 +26,10 @@
   height: 30px;
   top: -5px;
   left: -1px;
+}
+
+.checkbox__item:last-child label {
+  margin-bottom: 0;
 }
 
 .checkbox__item input:checked + label::before {

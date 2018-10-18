@@ -42,14 +42,27 @@
 }
 
 .page-footer__copyright-link {
-  width: 35px;
-  height: 42px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
   margin-left: auto;
   margin-top: 2px;
+  margin-right: -4px;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.page-footer__copyright-link .copyright__icon-academy {
+  fill: #000000;
+  width: 39px;
+  height: 42px;
+}
+
+.copyright__icon-academy:hover {
+  fill: $green;
+}
+
+.page-footer__copyright-link:active {
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -84,6 +97,10 @@
 
   .page-footer__copyright-text {
     padding-right: 20px;
+  }
+
+  .page-footer__copyright-link {
+    width: auto;
   }
 }
 

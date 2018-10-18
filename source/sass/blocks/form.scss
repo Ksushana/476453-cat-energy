@@ -42,7 +42,7 @@ input[type="checkbox"]:focus + label::before {
   @include flex-column;
   position: relative;
 
-  &--contacts::after {
+  &--contacts::before {
     content: "";
     position: absolute;
     height: 3px;
@@ -52,7 +52,7 @@ input[type="checkbox"]:focus + label::before {
     top: 45px;
   }
 
-  &--text::after {
+  &--text::before {
     content: "";
     position: absolute;
     height: 3px;
@@ -62,7 +62,7 @@ input[type="checkbox"]:focus + label::before {
     top: 25px;
   }
 
-  &--checkbox::after {
+  &--checkbox::before {
     content: "";
     position: absolute;
     height: 3px;
@@ -85,6 +85,7 @@ input[type="checkbox"]:focus + label::before {
     padding-bottom: 11px;
     padding-left: 14px;
     padding-right: 10px;
+    resize: none;
   }
 }
 
@@ -94,13 +95,12 @@ input[type="checkbox"]:focus + label::before {
   margin: 0 5%;
   padding-top: 10px;
   text-transform: none;
-  position: relative;
   padding-right: 25px;
   z-index: 2;
   background-color: #ffffff;
 
   &--text {
-    margin: 22px 5% 14px;
+    margin: 0 5% 14px;
     padding-top: 13px;
   }
 
@@ -127,7 +127,7 @@ input[type="checkbox"]:focus + label::before {
 
 .form__button {
   width: 100%;
-  margin: 15px auto;
+  margin: 18px auto;
 }
 
 .form__note {
@@ -137,6 +137,34 @@ input[type="checkbox"]:focus + label::before {
   font-family: "Arial", "Helvetica", sans-serif;
   text-transform: none;
   margin-top: 5px;
+}
+
+input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+input:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+textarea::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+textarea:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #000000;
 }
 
 @media (min-width: 768px) {

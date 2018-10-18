@@ -57,6 +57,10 @@ textarea[placeholder] {
   background-color: #ffffff;
 }
 
+.container + svg {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .body {
     @include tablet;
