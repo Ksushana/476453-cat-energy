@@ -9,42 +9,23 @@
   display: flex;
   margin-bottom: 15px;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--tel::after {
-    background-image: url("../img/icon-phone-black.svg");
-    width: 20px;
-    height: 20px;
-    top: 12px;
-    right: 15px;
-  }
-
-  &--email::after {
-    right: 18px;
-    top: 15px;
-    width: 17px;
-    height: 15px;
-    background-image: url("../img/icon-mail.svg");
-  }
 }
 
 .form-contacts__input {
   margin-left: 11px;
   flex-grow: 1;
+  position: relative;
 }
 
-input[type="tel"]:focus .form-contacts__label-wrapper--tel::after {
-  background-image: url("../img/icon-phone-green.svg");
+.form__icon {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
-input[type="email"]:focus .form-contacts__label-wrapper--email::after {
-  background-image: url("../img/icon-mail-green.svg");
+.form-contacts__input:focus + .form__icon {
+  fill: $green;
 }
 
 @media (min-width: 768px) {

@@ -16,8 +16,14 @@ input[type="checkbox"]:focus + label::before {
   outline: 2px solid #5e9ed6;
 }
 
-.input-error {
+input:not(:placeholder-shown):invalid {
   border: 1px solid #ff8282;
+  outline: 1px solid #ff8282;
+}
+
+.form__input--invalid:invalid {
+  border: 1px solid #ff8282;
+  outline: 1px solid #ff8282;
 }
 
 .form__label {
@@ -40,37 +46,6 @@ input[type="checkbox"]:focus + label::before {
 .form__fieldset {
   @include zero;
   @include flex-column;
-  position: relative;
-
-  &--contacts::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    background-color: $green;
-    width: 90%;
-    left: 10%;
-    top: 45px;
-  }
-
-  &--text::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    background-color: $green;
-    width: 90%;
-    left: 10%;
-    top: 25px;
-  }
-
-  &--checkbox::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    background-color: $green;
-    width: 90%;
-    left: 10%;
-    top: 18px;
-  }
 }
 
 .form__input {
@@ -92,26 +67,63 @@ input[type="checkbox"]:focus + label::before {
 .form__legend {
   font-size: 24px;
   line-height: 24px;
-  margin: 0 5%;
-  padding-top: 10px;
-  text-transform: none;
   padding-right: 25px;
+  padding-left: 25px;
+  text-transform: none;
   z-index: 2;
   background-color: #ffffff;
-
-  &--text {
-    margin: 0 5% 14px;
-    padding-top: 13px;
-  }
+  width: auto;
+  margin: 0;
+  padding-top: 10px;
+  position: relative;
+  display: flex;
 
   &--contacts {
     padding-top: 30px;
-    width: 208px;
+    width: 240px;
+  }
+
+  &--contacts::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $green;
+    left: 100%;
+    width: calc(100vw - 240px);
+    top: 45px;
+    z-index: -1;
+  }
+
+  &--text {
+    // margin: 0 5% 14px;
+    padding-top: 13px;
+    width: 186px;
+  }
+
+  &--text::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $green;
+    left: 100%;
+    width: calc(100vw - 186px);
+    top: 25px;
   }
 
   &--checkbox {
     padding-top: 5px;
     padding-bottom: 18px;
+    width: 191px;
+  }
+
+  &--checkbox::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $green;
+    left: 100%;
+    width: calc(100vw - 191px);
+    top: 18px;
   }
 }
 
@@ -190,17 +202,32 @@ textarea::-webkit-input-placeholder {
     &--contacts {
       width: 593px;
       padding-top: 57px;
-      margin: 0 4%;
+      margin: 0 0 0 4%;
+    }
+
+    &--contacts::after {
+      width: calc(100vw - 623px);
+      top: 75px;
     }
 
     &--text {
-      margin: 0 4%;
+      margin: 0 0 0 4%;
       width: 258px;
     }
 
+    &--text::after {
+      width: calc(100vw - 290px);
+      top: 35px;
+    }
+
     &--checkbox {
-      margin: 0 4%;
+      margin: 0 0 0 4%;
       width: 290px;
+    }
+
+    &--checkbox::after {
+      width: calc(100vw - 330px);
+      top: 25px;
     }
   }
 
@@ -209,29 +236,12 @@ textarea::-webkit-input-placeholder {
       margin: 21px 3.3% 21px;
     }
 
-    &::after {
-      width: 100%;
-      left: 0;
-    }
-
-    &--contacts::after {
-      top: 79px;
-    }
-
     &--text {
       margin-top: 38px;
     }
 
-    &--text::after {
-      top: 35px;
-    }
-
     &--checkbox {
       margin-top: 37px;
-    }
-
-    &--checkbox::after {
-      top: 27px;
     }
   }
 
@@ -289,24 +299,12 @@ textarea::-webkit-input-placeholder {
       margin: 20px 0 23px 2.5%;
     }
 
-    &--contacts::after {
-      top: 69px;
-    }
-
     &--text {
       margin-top: 38px;
     }
 
-    &--text::after {
-      top: 33px;
-    }
-
     &--checkbox {
       margin-top: 37px;
-    }
-
-    &--checkbox::after {
-      top: 28px;
     }
   }
 
@@ -315,6 +313,15 @@ textarea::-webkit-input-placeholder {
       width: 593px;
       padding-top: 46px;
       margin: 0 5%;
+    }
+
+    &--contacts::after {
+      height: 3px;
+      background-color: $green;
+      left: 100%;
+      width: calc(100vw - 240px);
+      top: 45px;
+      z-index: -1;
     }
 
     &--text {

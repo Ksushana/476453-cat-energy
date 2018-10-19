@@ -39,6 +39,7 @@
 .page-footer__copyright-text {
   font-size: 16px;
   line-height: 16px;
+  color: #444444;
 }
 
 .page-footer__copyright-link {
@@ -52,12 +53,12 @@
 }
 
 .page-footer__copyright-link .copyright__icon-academy {
-  fill: #000000;
+  fill: #666666;
   width: 39px;
   height: 42px;
 }
 
-.copyright__icon-academy:hover {
+.page-footer__copyright-link:hover .copyright__icon-academy {
   fill: $green;
 }
 
