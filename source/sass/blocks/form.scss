@@ -206,8 +206,18 @@ textarea::-webkit-input-placeholder {
     }
 
     &--contacts::after {
-      width: calc(100vw - 623px);
+      width: calc(100vw - 624px);
       top: 75px;
+    }
+
+    &--contacts::before {
+      content: "";
+      position: absolute;
+      width: calc(100vw - 624px);
+      height: 3px;
+      background-color: $green;
+      top: 75px;
+      right: 100%;
     }
 
     &--text {
@@ -216,8 +226,18 @@ textarea::-webkit-input-placeholder {
     }
 
     &--text::after {
-      width: calc(100vw - 290px);
+      width: calc(100vw - 289px);
       top: 35px;
+    }
+
+    &--text::before {
+      content: "";
+      position: absolute;
+      width: calc(100vw - 289px);
+      height: 3px;
+      background-color: $green;
+      top: 35px;
+      right: 100%;
     }
 
     &--checkbox {
@@ -226,8 +246,18 @@ textarea::-webkit-input-placeholder {
     }
 
     &--checkbox::after {
-      width: calc(100vw - 330px);
+      width: calc(100vw - 321px);
       top: 25px;
+    }
+
+    &--checkbox::before {
+      content: "";
+      position: absolute;
+      width: calc(100vw - 321px);
+      height: 3px;
+      background-color: $green;
+      top: 25px;
+      right: 100%;
     }
   }
 
@@ -316,12 +346,14 @@ textarea::-webkit-input-placeholder {
     }
 
     &--contacts::after {
-      height: 3px;
-      background-color: $green;
-      left: 100%;
-      width: calc(100vw - 240px);
-      top: 45px;
-      z-index: -1;
+      width: calc(100vw - 665px);
+      top: 68px;
+    }
+
+    &--contacts::before {
+      right: 100%;
+      width: 100vw;
+      top: 68px;
     }
 
     &--text {
@@ -330,10 +362,32 @@ textarea::-webkit-input-placeholder {
       padding-top: 10px;
     }
 
+    &--text::after {
+      width: calc(100vw - 330px);
+      top: 30px;
+    }
+
+    &--text::before {
+      right: 100%;
+      width: 100vw;
+      top: 30px;
+    }
+
     &--checkbox {
       margin: 0 5%;
       width: 290px;
       padding-top: 7px;
+    }
+
+    &--checkbox::after {
+      width: calc(100vw - 362px);
+      top: 28px;
+    }
+
+    &--checkbox::before {
+      right: 100%;
+      width: 100vw;
+      top: 28px;
     }
   }
 
