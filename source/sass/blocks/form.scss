@@ -67,8 +67,8 @@ input:not(:placeholder-shown):invalid {
 .form__legend {
   font-size: 24px;
   line-height: 24px;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-transform: none;
   z-index: 2;
   background-color: #ffffff;
@@ -79,8 +79,8 @@ input:not(:placeholder-shown):invalid {
   display: flex;
 
   &--contacts {
-    padding-top: 30px;
-    width: 240px;
+    padding-top: 29px;
+    width: 225px;
   }
 
   &--contacts::after {
@@ -89,15 +89,15 @@ input:not(:placeholder-shown):invalid {
     height: 3px;
     background-color: $green;
     left: 100%;
-    width: calc(100vw - 240px);
+    width: calc(100vw - 225px);
     top: 45px;
     z-index: -1;
   }
 
   &--text {
-    // margin: 0 5% 14px;
     padding-top: 13px;
-    width: 186px;
+    width: 160px;
+    padding-bottom: 13px;
   }
 
   &--text::after {
@@ -106,14 +106,14 @@ input:not(:placeholder-shown):invalid {
     height: 3px;
     background-color: $green;
     left: 100%;
-    width: calc(100vw - 186px);
+    width: calc(100vw - 160px);
     top: 25px;
   }
 
   &--checkbox {
     padding-top: 5px;
     padding-bottom: 18px;
-    width: 191px;
+    width: 185px;
   }
 
   &--checkbox::after {
@@ -122,7 +122,7 @@ input:not(:placeholder-shown):invalid {
     height: 3px;
     background-color: $green;
     left: 100%;
-    width: calc(100vw - 191px);
+    width: calc(100vw - 185px);
     top: 18px;
   }
 }
@@ -207,7 +207,7 @@ textarea::-webkit-input-placeholder {
 
     &--contacts::after {
       width: calc(100vw - 624px);
-      top: 75px;
+      top: 80px;
     }
 
     &--contacts::before {
@@ -216,7 +216,7 @@ textarea::-webkit-input-placeholder {
       width: calc(100vw - 624px);
       height: 3px;
       background-color: $green;
-      top: 75px;
+      top: 80px;
       right: 100%;
     }
 
@@ -281,7 +281,7 @@ textarea::-webkit-input-placeholder {
 
     &--textarea {
       height: 174px;
-      margin-top: 77px;
+      margin-top: 64px;
     }
   }
 

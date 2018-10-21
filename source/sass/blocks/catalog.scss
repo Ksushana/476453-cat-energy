@@ -10,8 +10,9 @@
   @include header;
   text-align: left;
   margin: 22px 6.3%;
-  padding-top: 13px;
-  padding-bottom: 27px;
+  padding-top: 3px;
+  padding-bottom: 20px;
+  line-height: 36px;
 }
 
 .catalog-item {
@@ -180,7 +181,8 @@
   .catalog__header {
     @include header-tablet;
     margin: 8px 4%;
-    padding-top: 22px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
   .catalog__wrapper {
@@ -239,14 +241,18 @@
   .catalog-item__data {
     font-size: 16px;
     line-height: 16px;
-    margin: 0 10.5%;
-    width: 79%;
+    margin: 0 12%;
+    width: 76%;
   }
 
   .catalog-item__data dl {
     border-bottom: 1px solid $border-grey;
     padding: 7px 0;
     width: 100%;
+  }
+
+  .catalog-item__data dl:last-child {
+    padding: 6px 0;
   }
 
   .catalog-item__data-value {
@@ -326,7 +332,7 @@
 
 @media (min-width: 1300px) {
   .catalog__header {
-    margin: 23px 7.6% 8px;
+    margin: 24px 7.6% 7px;
   }
 
   .catalog__wrapper {
@@ -350,6 +356,7 @@
 
   .catalog__load {
     width: 20.1%;
+    margin-bottom: 23px;
 
     &--more {
       margin: 26px auto 85px;
@@ -372,8 +379,8 @@
   }
 
   .catalog-item__data {
-    margin: 0 14.5%;
-    width: 71%;
+    margin: 0 16%;
+    width:68%;
   }
 
   .catalog-item__data dl {
@@ -385,7 +392,7 @@
   }
 
   .catalog__load-wrapper {
-    margin-top: 123px;
+    margin-top: 120px;
 
     &::before {
       left: 35.3%;
@@ -397,7 +404,7 @@
   }
 
   .catalog__extra-gift-wrapper {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 
     &::before {
       top: 66px;

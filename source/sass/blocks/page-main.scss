@@ -41,7 +41,6 @@
 .page-main__head-image {
   height: 135px;
   text-align: center;
-  position: relative;
 }
 
 .page-main__head-image img {
@@ -49,7 +48,6 @@
 }
 
 .button--search {
-  position: absolute;
   width: 87.5%;
   padding-top: 10px;
   font-size: 14px;
@@ -151,11 +149,12 @@
   .page-main__cat {
     margin-left: 12%;
     padding-top: 80px;
+    padding-bottom: 280px;
   }
 
   .button--search {
     height: 52px;
-    top: 401px;
+    bottom: 187px;
     left: 13.2%;
   }
 

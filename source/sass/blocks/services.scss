@@ -19,10 +19,12 @@
 .services__header {
   @include content-oswald;
   position: relative;
-  text-align: center;
-  margin-top: 19px;
+  // text-align: center;
+
+  margin-top: 17px;
   font-size: 24px;
-  margin-left: 15px;
+  line-height: 24px;
+  margin-left: 70px;
 
   &--decrease {
     &::before {
@@ -33,7 +35,7 @@
       background-image: url("../img/icon-cat-slim.svg");
       background-position: center;
       background-repeat: no-repeat;
-      left: -5px;
+      left: -60px;
       top: -18px;
       z-index: 10;
     }
@@ -45,14 +47,14 @@
       height: 50px;
       border-radius: 50%;
       background-color: $green;
-      left: -11px;
+      left: -68px;
       top: -15px;
     }
   }
 
   &--increase {
     margin-top: 18px;
-    margin-left: 37px;
+    margin-left: 70px;
 
     &::before {
       content: "";
@@ -62,7 +64,7 @@
       background-image: url("../img/icon-cat-pro.svg");
       background-position: center;
       background-repeat: no-repeat;
-      left: -43px;
+      left: -77px;
       top: -5px;
       z-index: 10;
     }
@@ -74,7 +76,7 @@
       height: 50px;
       border-radius: 50%;
       background-color: $green;
-      left: -35px;
+      left: -68px;
       top: -15px;
     }
   }
@@ -82,7 +84,7 @@
 
 .services__info {
   padding-top: 18px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   position: relative;
 
   &::before {
@@ -94,7 +96,7 @@
   }
 
   &--increase {
-    margin-top: 19px;
+    margin-top: 21px;
   }
 }
 
@@ -131,8 +133,11 @@
     font-size: 36px;
     line-height: 37px;
     text-align: left;
-    padding-left: 18px;
+    padding-left: 30px;
+    padding-right: 250px;
     margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 20px;
 
     &--decrease {
       &::before {
@@ -152,7 +157,6 @@
 
     &--increase {
       margin-top: 0;
-      margin-left: 15px;
 
       &::before {
         width: 270px;
@@ -188,7 +192,7 @@
     line-height: 24px;
     padding-left: 30px;
     margin-top: 8px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 
     &::before {
       border-bottom: none;
@@ -236,38 +240,39 @@
   }
 
   .services__header {
-    text-align: center;
+    padding-right: 0;
+    padding-left: 208px;
 
     &--decrease {
       &::before {
         width: 70px;
         height: 97px;
-        left: 8%;
+        left: 11%;
         top: -35px;
       }
 
       &::after {
         width: 100px;
         height: 100px;
-        left: 5.5%;
+        left: 8%;
         top: -30px;
       }
     }
 
     &--increase {
-      margin-left: 42px;
+      padding-left: 193px;
 
       &::before {
         width: 134px;
         height: 56px;
-        left: -6%;
+        left: 3%;
         top: -6px;
       }
 
       &::after {
         width: 100px;
         height: 100px;
-        left: -2%;
+        left: 6%;
         top: -30px;
       }
     }
@@ -276,7 +281,7 @@
   .services__info {
     width: 100%;
     padding-top: 65px;
-    margin-bottom: 2px;
+    margin-bottom: 7px;
 
     &--decrease {
       padding-left: 45px;
