@@ -1,6 +1,7 @@
 @import "../variables";
 @import "../mixins";
 
+
 .catalog {
   @include flex-column;
 }
@@ -55,10 +56,11 @@
   line-height: 15px;
 }
 
-.catalog-item__data tr {
+.catalog-item__data dl {
   display: flex;
   justify-content: space-between;
   min-width: 140px;
+  margin: 3px 0;
 }
 
 .catalog-item__order {
@@ -241,9 +243,15 @@
     width: 79%;
   }
 
-  .catalog-item__data tr {
+  .catalog-item__data dl {
     border-bottom: 1px solid $border-grey;
     padding: 7px 0;
+    width: 100%;
+  }
+
+  .catalog-item__data-value {
+    text-align: right;
+    margin-left: auto;
   }
 
   .catalog-item__order {
@@ -368,7 +376,7 @@
     width: 71%;
   }
 
-  .catalog-item__data tr {
+  .catalog-item__data dl {
     padding: 6px 0 7px;
   }
 

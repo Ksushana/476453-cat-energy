@@ -10,7 +10,7 @@
   @include flex-column;
 }
 
-.lider-slide {
+.slider-slide {
   @include flex-column;
 }
 
@@ -56,10 +56,6 @@
 
   &--slim {
     margin-left: 19px;
-  }
-
-  &__active {
-    display: block;
   }
 }
 
@@ -169,5 +165,9 @@
   .slider-controls {
     margin-left: 52.8%;
     margin-top: 22px;
+  }
+
+  .slider-control {
+    z-index: 2;
   }
 }
