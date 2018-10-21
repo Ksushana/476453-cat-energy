@@ -3,16 +3,18 @@
 
 .page-main__head {
   @include flex_column;
+  position: relative;
 }
 
 .page-main__cat {
   @include flex_column;
   background-color: $green;
-  height: 305px;
+  min-height: 305px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 28px;
+  padding-bottom: 150px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -27,6 +29,7 @@
   margin: 0 auto;
   color: #ffffff;
   padding-bottom: 8px;
+  z-index: 5;
 }
 
 .page-main__head-moto {
@@ -38,6 +41,7 @@
 .page-main__head-image {
   height: 135px;
   text-align: center;
+  position: relative;
 }
 
 .page-main__head-image img {
@@ -45,6 +49,7 @@
 }
 
 .button--search {
+  position: absolute;
   width: 87.5%;
   padding-top: 10px;
   font-size: 14px;
@@ -63,7 +68,8 @@
   .page-main__cat {
     background-color: #ffffff;
     background-image: none;
-    height: auto;
+    min-height: auto;
+    padding-bottom: 0;
   }
 
   .page-main__head-heading {
@@ -102,7 +108,7 @@
     font-size: 20px;
     line-height: 20px;
     padding-top: 15px;
-    top: 348px;
+    bottom: 488px;
     left: 15.5%;
   }
 
