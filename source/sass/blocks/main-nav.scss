@@ -107,6 +107,7 @@
     font-size: 18px;
     line-height: 24px;
     justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   .main-nav {
@@ -152,6 +153,12 @@
 
   .main-nav__item:last-child {
     margin-left: 50px;
+  }
+
+  .main-nav__list {
+    &--index {
+      padding-left: 390px;
+    }
   }
 
   .main-nav__list .main-nav__item:last-child {
