@@ -206,7 +206,7 @@
   .services__catalog {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 5%;
+    padding-left: 30px;
     margin-top: 20px;
 
     &::before {
@@ -295,9 +295,11 @@
 
   .services__weight-decrease .services__catalog {
     margin-left: 8%;
+    padding-left: 0;
   }
 
   .services__weight-increase .services__catalog {
     margin-left: 6%;
+    padding-left: 0;
   }
 }
