@@ -17,18 +17,18 @@
   position: relative;
 }
 
-.form__icon {
+.form-contacts__icon {
   content: "";
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.form-contacts__input:focus + .form__icon {
+.form-contacts__input:focus + .form-contacts__icon {
   fill: $green;
 }
 
-.form__input--invalid + .form__icon {
+.form__input--invalid + .form-contacts__icon {
   fill: #ff8282;
 }
 
@@ -63,7 +63,7 @@
     }
   }
 
-  .form__icon {
+  .form-contacts__icon {
     top: 20px;
     right: 20px;
   }

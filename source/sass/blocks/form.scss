@@ -21,9 +21,18 @@ input:not(:placeholder-shown):invalid {
   outline: 1px solid #ff8282;
 }
 
+.form input {
+  display: block;
+}
+
 .form__input--invalid {
   border: 1px solid #ff8282;
   outline: 1px solid #ff8282;
+}
+
+.form__label-container {
+  padding-bottom: 11px;
+  margin: 0 6.3%;
 }
 
 .form__label {
@@ -46,6 +55,10 @@ input:not(:placeholder-shown):invalid {
 .form__fieldset {
   @include zero;
   @include flex-column;
+  position: relative;
+  border: none;
+  margin: 0;
+  width: 100%;
 }
 
 .form__input {
@@ -132,7 +145,7 @@ input:not(:placeholder-shown):invalid {
   width: 87%;
 }
 
-.button__wrapper {
+.form__button-wrapper {
   @include flex-column;
   margin: 0 6%;
 }
@@ -295,7 +308,7 @@ textarea::-webkit-input-placeholder {
     width: 82%;
   }
 
-  .button__wrapper {
+  .form__button-wrapper {
     flex-direction: row;
     margin: 0 9%;
     justify-content: left;
@@ -404,7 +417,7 @@ textarea::-webkit-input-placeholder {
     }
   }
 
-  .button__wrapper {
+  .form__button-wrapper {
     width: 100%;
     margin: 9px 3% 0;
     justify-content: left;
@@ -416,5 +429,10 @@ textarea::-webkit-input-placeholder {
 
   .form__note {
     margin-left: 6.7%;
+  }
+
+  .form__label-container {
+    margin: 0 11% 0 1.2%;
+    padding-bottom: 0;
   }
 }

@@ -19,29 +19,13 @@ input[type="checkbox"]:focus + label::before {
   margin-top: 15px;
 }
 
-.form__label-container {
-  padding-bottom: 11px;
-}
-
-.form-page__header-container,
-.form__label-container {
+.form-page__header-container {
   margin: 0 6.3%;
 }
 
 .form-page__intro {
   margin-right: 10px;
   padding-bottom: 26px;
-}
-
-.form input {
-  display: block;
-}
-
-.form__fieldset {
-  position: relative;
-  border: none;
-  margin: 0;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -82,10 +66,5 @@ input[type="checkbox"]:focus + label::before {
   .form-page__intro {
     margin-left: 0;
     width: 30%;
-  }
-
-  .form__label-container {
-    margin: 0 11% 0 1.2%;
-    padding-bottom: 0;
   }
 }
