@@ -114,7 +114,7 @@
 
 @media (min-width: 1300px) {
   .extra__header {
-    margin-left: 6.5%;
+    transform: translateX(-35px);
     width: 424px;
   }
 
@@ -123,10 +123,10 @@
   }
 
   .extra__list {
-    margin-left: 10.3%;
+    margin-left: 4%;
     border-left: none;
     border-right: none;
-    width: 84.3%;
+    width: 93.5%;
   }
 
   .extra__item {

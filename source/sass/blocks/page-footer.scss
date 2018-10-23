@@ -52,13 +52,13 @@
   color: #000000;
 }
 
-.page-footer__copyright-link .copyright__icon-academy {
+.page-footer__copyright-link .page-footer__copyright-icon-academy {
   fill: #666666;
   width: 39px;
   height: 42px;
 }
 
-.page-footer__copyright-link:hover .copyright__icon-academy {
+.page-footer__copyright-link:hover .page-footer__copyright-icon-academy {
   fill: $green;
 }
 
@@ -111,15 +111,9 @@
     margin-top: 0;
   }
 
-  .contacts__wrapper {
-    position: absolute;
-    width: 39.6%;
-    height: 201px;
-  }
-
   .page-footer__links {
-    margin-left: 7.5%;
-    margin-right: 7.3%;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: 32px;
   }
 

@@ -340,13 +340,12 @@ textarea::-webkit-input-placeholder {
 
   .form__legend {
     &--contacts {
-      width: 593px;
       padding-top: 46px;
-      margin: 0 5%;
+      margin: 0;
     }
 
     &--contacts::after {
-      width: calc(100vw - 665px);
+      width: calc(100vw - 593px);
       top: 68px;
     }
 
@@ -357,13 +356,13 @@ textarea::-webkit-input-placeholder {
     }
 
     &--text {
-      margin: 0 5%;
+      margin: 0;
       width: 258px;
       padding-top: 10px;
     }
 
     &--text::after {
-      width: calc(100vw - 330px);
+      width: calc(100vw - 258px);
       top: 30px;
     }
 
@@ -374,13 +373,13 @@ textarea::-webkit-input-placeholder {
     }
 
     &--checkbox {
-      margin: 0 5%;
+      margin: 0;
       width: 290px;
       padding-top: 7px;
     }
 
     &--checkbox::after {
-      width: calc(100vw - 362px);
+      width: calc(100vw - 290px);
       top: 28px;
     }
 
@@ -392,8 +391,8 @@ textarea::-webkit-input-placeholder {
   }
 
   .form__textarea {
-    margin: 64px 7.7% 22px;
-    width: 84.6%;
+    margin: 64px 3% 22px;
+    width: 94%;
     font-size: 20px;
     line-height: 30px;
   }
@@ -407,7 +406,7 @@ textarea::-webkit-input-placeholder {
 
   .button__wrapper {
     width: 100%;
-    margin: 9px 7.7% 0;
+    margin: 9px 3% 0;
     justify-content: left;
   }
 

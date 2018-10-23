@@ -47,7 +47,7 @@
   transform: translateY(-138px);
 }
 
-.button--search {
+.page-main__button {
   width: 87.5%;
   padding-top: 10px;
   font-size: 14px;
@@ -99,7 +99,7 @@
     height: 609px;
   }
 
-  .button--search {
+  .page-main__button {
     position: absolute;
     width: 245px;
     height: 50px;
@@ -147,29 +147,29 @@
   }
 
   .page-main__cat {
-    margin-left: 12%;
+    margin-left: 8%;
     padding-top: 80px;
     padding-bottom: 280px;
   }
 
-  .button--search {
+  .page-main__button {
     height: 52px;
     bottom: 187px;
-    left: 13.2%;
+    left: 9.2%;
   }
 
   .page-main__head-image img {
-    margin-left: -490px;
+    margin-left: -420px;
     margin-top: 140px;
     width: 552px;
     height: 499px;
   }
 
   .page-main__services {
-    margin: 22px 7.5% 0;
+    margin: 22px 3% 0;
   }
 
   .page-main__decription {
-    margin: 70px 7.6% 0;
+    margin: 70px 3% 0;
   }
 }

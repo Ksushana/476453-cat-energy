@@ -65,13 +65,18 @@ input[type="checkbox"]:focus + label::before {
 }
 
 @media (min-width: 1300px) {
+  .form-page {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
   .form-page__header {
     margin-top: 70px;
     margin-bottom: 30px;
   }
 
   .form-page__header-container {
-    margin: 0 7.5%;
+    margin: 0 3%;
   }
 
   .form-page__intro {
@@ -80,7 +85,7 @@ input[type="checkbox"]:focus + label::before {
   }
 
   .form__label-container {
-    margin: 0 10.5%;
+    margin: 0 11% 0 1.2%;
     padding-bottom: 0;
   }
 }

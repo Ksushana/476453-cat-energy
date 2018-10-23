@@ -6,20 +6,20 @@
   margin: 0 auto;
 }
 
-.visualisation-slider {
+.slider__visualisation {
   @include flex-column;
 }
 
-.slider-slide {
+.slider__slide {
   @include flex-column;
 }
 
-.slider-slide img {
+.slider__slide img {
   margin-top: 13px;
   margin-bottom: 28px;
 }
 
-.slider-range-line {
+.slider__range-line {
   width: 85px;
   height: 14px;
   border: 1px solid $border-grey;
@@ -28,7 +28,7 @@
   position: relative;
 }
 
-.slider-range-value {
+.slider__range-value {
   position: absolute;
   background-color: $green;
   width: 35px;
@@ -45,7 +45,7 @@
   }
 }
 
-.slider-control {
+.slider__control {
   @include content-oswald;
   font-size: 16px;
   line-height: 20px;
@@ -59,7 +59,7 @@
   }
 }
 
-.slider-controls {
+.slider__controls {
   align-items: center;
   display: flex;
   margin: 0 auto;
@@ -68,27 +68,27 @@
 }
 
 @media (min-width: 768px) {
-  .slider-slide {
+  .slider__slide {
     margin-top: 20px;
   }
 
-  .slider-slide img {
+  .slider__slide img {
     width: 665px;
     height: 515px;
     margin-bottom: 13px;
   }
 
-  .slider-range-line {
+  .slider__range-line {
     width: 428px;
     height: 6px;
     background-color: $border-grey;
   }
 
-  .slider-controls {
+  .slider__controls {
     width: 570px;
   }
 
-  .slider-control {
+  .slider__control {
     font-size: 20px;
     border-bottom: 1px dotted $border-grey;
     padding-bottom: 7px;
@@ -103,7 +103,7 @@
     }
   }
 
-  .visualisation-slider {
+  .slider__visualisation {
     height: 463px;
     margin-top: 240px;
 
@@ -120,7 +120,7 @@
     margin-top: -200px;
   }
 
-  .slider-range-value {
+  .slider__range-value {
     width: 32px;
     height: 32px;
     border: 12px solid #ffffff;
@@ -147,11 +147,11 @@
 }
 
 @media (min-width: 1300px) {
-  .visualisation-slider {
+  .slider__visualisation {
     margin-top: 196px;
   }
 
-  .slider-slide img {
+  .slider__slide img {
     width: 690px;
     height: 517px;
     margin-bottom: 13px;
@@ -162,12 +162,12 @@
     margin-top: -222px;
   }
 
-  .slider-controls {
+  .slider__controls {
     margin-left: 52.8%;
     margin-top: 22px;
   }
 
-  .slider-control {
+  .slider__control {
     z-index: 2;
   }
 }
