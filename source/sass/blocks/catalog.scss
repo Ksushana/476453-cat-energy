@@ -239,18 +239,18 @@
     margin-bottom: 7px;
 
     &::before {
-      top: 66px;
+      display: none;
     }
   }
 
   .catalog__extra {
-    margin: 38px 0 0;
+    margin: 32px 0 0;
     width: 73.77%;
   }
 
   .catalog__gift {
     width: 246px;
-    margin: 160px 0.5% 77px 4.2%;
+    margin: 80px 0.5% 77px 4.2%;
     height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
