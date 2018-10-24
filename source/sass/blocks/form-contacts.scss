@@ -9,42 +9,23 @@
   display: flex;
   margin-bottom: 15px;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--tel::after {
-    background-image: url("../img/icon-phone.svg");
-    width: 20px;
-    height: 20px;
-    top: 12px;
-    right: 15px;
-  }
-
-  &--email::after {
-    right: 18px;
-    top: 15px;
-    width: 17px;
-    height: 15px;
-    background-image: url("../img/icon-mail.svg");
-  }
 }
 
 .form-contacts__input {
   margin-left: 11px;
   flex-grow: 1;
+  position: relative;
 }
 
-// .form-contacts__input--email:active .form-contacts__label-wrapper--email::after {
-//   background-image: url("../img/icon-mail-green.svg");
-// }
+.form-contacts__icon {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 
-input[type="email"]:focus .form-contacts__label-wrapper--email::before {
-  background-image: url("../img/icon-mail-green.svg");
+.form-contacts__input:focus + .form-contacts__icon {
+  fill: $green;
 }
 
 @media (min-width: 768px) {
@@ -77,13 +58,18 @@ input[type="email"]:focus .form-contacts__label-wrapper--email::before {
       right: 18px;
     }
   }
+
+  .form-contacts__icon {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @media (min-width: 1300px) {
   .form-contacts__wrapper {
     display: flex;
-    margin-left: 7.7%;
-    margin-right: 7.6%;
+    margin-left: 3%;
+    margin-right: 3%;
     justify-content: space-between;
   }
 

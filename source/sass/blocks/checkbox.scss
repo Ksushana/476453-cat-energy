@@ -8,6 +8,10 @@
 .checkbox__item {
   margin-top: 0;
   margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .checkbox__item label {
@@ -22,6 +26,10 @@
   height: 30px;
   top: -5px;
   left: -1px;
+}
+
+.checkbox__item:last-child label {
+  margin-bottom: 0;
 }
 
 .checkbox__item input:checked + label::before {
@@ -65,14 +73,18 @@
 @media (min-width: 1300px) {
   .checkbox__inputs {
     justify-content: space-between;
-    margin-left: 6.3%;
-    margin-right: 3.5%;
+    margin-left: 3%;
+    margin-right: 2%;
   }
 
   .checkbox__item {
     width: 20%;
-    margin-left: auto;
+    margin-left: 1.2%;
     margin-right: auto;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   .checkbox__item label::before {

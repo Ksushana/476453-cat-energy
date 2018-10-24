@@ -34,10 +34,6 @@
   transform: translateY(-10px);
 }
 
-.result-example__conclusion {
-  margin-top: 10px;
-}
-
 @media (min-width: 768px) {
   .weight-loss__data {
     font-size: 30px;
@@ -50,10 +46,8 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
-  }
-
-  .result-example__conclusion {
-    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -69,17 +63,5 @@
   .weight-loss__text {
     background-color: $background-grey;
     padding: 0 10px;
-  }
-
-  .result-example__conclusion {
-    margin-left: 0;
-    padding-top: 20px;
-    margin-top: 20px;
-    text-align: left;
-    width: auto;
-  }
-
-  .result-example__sum {
-    margin-left: 60px;
   }
 }

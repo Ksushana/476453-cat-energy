@@ -19,29 +19,13 @@ input[type="checkbox"]:focus + label::before {
   margin-top: 15px;
 }
 
-.form__label-container {
-  padding-bottom: 11px;
-}
-
-.form-page__header-container,
-.form__label-container {
+.form-page__header-container {
   margin: 0 6.3%;
 }
 
 .form-page__intro {
   margin-right: 10px;
   padding-bottom: 26px;
-}
-
-.form input {
-  display: block;
-}
-
-.form__fieldset {
-  position: relative;
-  border: none;
-  margin: 0;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -65,22 +49,22 @@ input[type="checkbox"]:focus + label::before {
 }
 
 @media (min-width: 1300px) {
+  .form-page {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
   .form-page__header {
-    margin-top: 70px;
+    margin-top: 45px;
     margin-bottom: 30px;
   }
 
   .form-page__header-container {
-    margin: 0 7.5%;
+    margin: 0 3%;
   }
 
   .form-page__intro {
     margin-left: 0;
     width: 30%;
-  }
-
-  .form__label-container {
-    margin: 0 10.5%;
-    padding-bottom: 0;
   }
 }

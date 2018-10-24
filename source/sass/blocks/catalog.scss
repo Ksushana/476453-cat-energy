@@ -1,6 +1,7 @@
 @import "../variables";
 @import "../mixins";
 
+
 .catalog {
   @include flex-column;
 }
@@ -9,60 +10,9 @@
   @include header;
   text-align: left;
   margin: 22px 6.3%;
-  padding-top: 13px;
-  padding-bottom: 27px;
-}
-
-.catalog-item {
-  min-width: 280px;
+  padding-top: 3px;
   padding-bottom: 20px;
-  border-top: 1px solid $border-grey-light;
-  // min-height: 208px;
-
-  @include flex-column;
-
-  &:last-child {
-    border-bottom: 1px solid $border-grey-light;
-  }
-}
-
-.catalog-item__wrapper {
-  display: flex;
-  margin: 0 5.8%;
-}
-
-.catalog-item__image {
-  height: 145px;
-}
-
-.catalog-item__info {
-  @include flex-column;
-}
-
-.catalog-item__name {
-  @include content-oswald;
-  font-size: 16px;
-  line-height: 20px;
-  width: 90px;
-  padding-top: 8px;
-  margin-bottom: 10px;
-  margin-top: 13px;
-}
-
-.catalog-item__data {
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.catalog-item__data tr {
-  display: flex;
-  justify-content: space-between;
-  min-width: 140px;
-}
-
-.catalog-item__order {
-  width: 87%;
-  margin: -4px auto 4px;
+  line-height: 36px;
 }
 
 .catalog__load {
@@ -104,15 +54,16 @@
 
 .catalog__button {
   @include content-oswald;
+  display: block;
   width: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  height: 40px;
+  height: 38px;
   background-color: $background-grey;
   border: none;
-  padding-top: 2px;
+  padding-top: 9px;
 
   &:hover {
     background-color: #ebebeb;
@@ -155,6 +106,7 @@
 }
 
 .catalog__extra-gift-wrapper {
+  @include flex_column;
   position: relative;
   z-index: 1;
 
@@ -177,7 +129,8 @@
   .catalog__header {
     @include header-tablet;
     margin: 8px 4%;
-    padding-top: 22px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
   .catalog__wrapper {
@@ -185,68 +138,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .catalog-item {
-    width: 46%;
-    border: none;
-    background-color: $background-grey;
-    margin-bottom: 18px;
-    margin-top: 119px;
-    padding-bottom: 38px;
-
-    &:nth-child(odd) {
-      margin-right: 8%;
-    }
-  }
-
-  .catalog-item__image {
-    &--big {
-      height: 208px;
-      width: 324px;
-      margin-top: -85px;
-    }
-
-    &--small {
-      height: 172px;
-      width: 324px;
-      margin-top: -50px;
-    }
-  }
-
-  .catalog-item__wrapper {
-    flex-direction: column;
-    margin: 0;
-    padding-top: 2px;
-  }
-
-  .catalog-item__wrapper a {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .catalog-item__name {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    width: 150px;
-    margin: 25px auto 17px;
-  }
-
-  .catalog-item__data {
-    font-size: 16px;
-    line-height: 16px;
-    margin: 0 10.5%;
-  }
-
-  .catalog-item__data tr {
-    border-bottom: 1px solid $border-grey;
-    padding: 7px 0;
-  }
-
-  .catalog-item__order {
-    margin-top: 30px;
-    width: 77%;
   }
 
   .catalog__load {
@@ -316,65 +207,24 @@
 
 @media (min-width: 1300px) {
   .catalog__header {
-    margin: 23px 7.6% 8px;
+    margin: 24px 3% 7px;
   }
 
   .catalog__wrapper {
-    margin: 10px 7.6%;
-  }
-
-  .catalog-item {
-    min-width: 200px;
-    width: 20.1%;
-    margin-right: 6.5%;
-    margin-bottom: 20px;
-
-    &:nth-child(odd) {
-      margin-right: 6.5%;
-    }
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    margin: 10px 3%;
   }
 
   .catalog__load {
     width: 20.1%;
+    margin-bottom: 23px;
 
     &--more {
       margin: 26px auto 85px;
     }
   }
 
-  .catalog-item__image {
-    &--big {
-      height: 207px;
-      width: 245px;
-      margin-top: -82px;
-      margin-bottom: 1px;
-    }
-
-    &--small {
-      width: 243px;
-      height: 172px;
-      margin-top: -47px;
-    }
-  }
-
-  .catalog-item__data {
-    margin: 0 14.5%;
-  }
-
-  .catalog-item__data tr {
-    padding: 6px 0 7px;
-  }
-
-  .catalog-item__order {
-    width: 70%;
-  }
-
   .catalog__load-wrapper {
-    margin-top: 123px;
+    margin-top: 120px;
 
     &::before {
       left: 35.3%;
@@ -382,25 +232,28 @@
   }
 
   .catalog__button {
+    margin: 0 auto;
     width: 90%;
   }
 
   .catalog__extra-gift-wrapper {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     &::before {
-      top: 66px;
+      display: none;
     }
   }
 
   .catalog__extra {
-    margin: 38px 0 0;
+    margin: 32px 0 0;
     width: 73.77%;
   }
 
   .catalog__gift {
     width: 246px;
-    margin: 160px 1.6% 77px;
+    margin: 80px 0.5% 77px 4.2%;
     height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }

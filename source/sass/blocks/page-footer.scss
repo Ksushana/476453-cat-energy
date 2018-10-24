@@ -39,17 +39,31 @@
 .page-footer__copyright-text {
   font-size: 16px;
   line-height: 16px;
+  color: #444444;
 }
 
 .page-footer__copyright-link {
-  width: 35px;
-  height: 42px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
   margin-left: auto;
   margin-top: 2px;
+  margin-right: -4px;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.page-footer__copyright-link .page-footer__copyright-icon-academy {
+  fill: #666666;
+  width: 39px;
+  height: 42px;
+}
+
+.page-footer__copyright-link:hover .page-footer__copyright-icon-academy {
+  fill: $green;
+}
+
+.page-footer__copyright-link:active {
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -85,6 +99,10 @@
   .page-footer__copyright-text {
     padding-right: 20px;
   }
+
+  .page-footer__copyright-link {
+    width: auto;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -93,15 +111,9 @@
     margin-top: 0;
   }
 
-  .contacts__wrapper {
-    position: absolute;
-    width: 39.6%;
-    height: 201px;
-  }
-
   .page-footer__links {
-    margin-left: 7.5%;
-    margin-right: 7.3%;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-top: 32px;
   }
 

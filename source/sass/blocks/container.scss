@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  position: relative;
+  min-width: 320px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.container + svg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+
+    @include flex-column;
+  }
+}
