@@ -30,6 +30,10 @@ input:not(:placeholder-shown):invalid {
   outline: 1px solid #ff8282;
 }
 
+.form__input--invalid + .form-contacts__icon {
+  fill: #ff8282;
+}
+
 .form__label-container {
   padding-bottom: 11px;
   margin: 0 6.3%;
@@ -425,8 +429,11 @@ textarea::-webkit-input-placeholder {
     justify-content: left;
   }
 
-  .form__button {
+  .form .form__button {
     width: 46.7%;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form__note {

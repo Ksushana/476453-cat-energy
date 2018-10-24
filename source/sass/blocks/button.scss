@@ -1,0 +1,18 @@
+.button {
+  @include content-oswald;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  height: 40px;
+  background-color: $button-green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}

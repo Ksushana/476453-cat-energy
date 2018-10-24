@@ -53,10 +53,6 @@
   padding-top: 9px;
 }
 
-.catalog__extra-gift-wrapper {
-  @include flex_column;
-}
-
 @media (min-width: 768px) {
   .extra {
     padding-bottom: 0;
@@ -155,12 +151,6 @@
       width: 100vw;
       top: 23px;
     }
-  }
-
-  .catalog__extra-gift-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-
   }
 
   .extra__list {

@@ -106,6 +106,7 @@
 }
 
 .catalog__extra-gift-wrapper {
+  @include flex_column;
   position: relative;
   z-index: 1;
 
@@ -237,6 +238,8 @@
 
   .catalog__extra-gift-wrapper {
     margin-bottom: 7px;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     &::before {
       display: none;

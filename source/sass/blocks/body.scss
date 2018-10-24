@@ -66,25 +66,9 @@ textarea[placeholder] {
   opacity: 0;
 }
 
-.container {
-  margin: 0 auto;
-  position: relative;
-  min-width: 320px;
-  background-color: #ffffff;
-}
-
-.container + svg {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .body {
     @include tablet;
-  }
-
-  .container {
-    min-width: 768px;
-    padding: 0;
   }
 
   input[placeholder],
@@ -97,13 +81,6 @@ textarea[placeholder] {
 @media (min-width: 1300px) {
   .body {
     @include desktop;
-  }
-
-  .container {
-    margin: 0 auto;
-    padding: 0;
-
-    @include flex-column;
   }
 }
 
@@ -121,24 +98,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  @include content-oswald;
-  border: none;
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  height: 40px;
-  background-color: $button-green;
-  margin: 0 auto;
-
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    color: rgba(#ffffff, 0.3);
-  }
 }
