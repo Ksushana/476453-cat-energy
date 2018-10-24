@@ -102,6 +102,8 @@ textarea[placeholder] {
   .container {
     margin: 0 auto;
     padding: 0;
+
+    @include flex-column;
   }
 }
 

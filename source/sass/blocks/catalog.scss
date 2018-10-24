@@ -54,15 +54,16 @@
 
 .catalog__button {
   @include content-oswald;
+  display: block;
   width: 100%;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  height: 40px;
+  height: 38px;
   background-color: $background-grey;
   border: none;
-  padding-top: 2px;
+  padding-top: 9px;
 
   &:hover {
     background-color: #ebebeb;
@@ -230,6 +231,7 @@
   }
 
   .catalog__button {
+    margin: 0 auto;
     width: 90%;
   }
 
